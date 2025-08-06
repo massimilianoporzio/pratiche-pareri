@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-r6i!-xvps$y*=8he*kfmvpnxt!d7)rn(3)240xf$_9^j_5(5&z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 
@@ -97,6 +97,7 @@ AUTH_USER_MODEL = 'users.CustomUser'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+     "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware', # Assicurati che sia qui
     'django.middleware.common.CommonMiddleware',
