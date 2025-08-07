@@ -5,7 +5,7 @@ requires-python = ">=3.13"
 dependencies = [
     "django>=5.2.5",
     "django-jazzmin>=3.0.1",
-    "djlint>=1.36.4",
+    "pre-commit>=4.2.0",
     "psycopg2-binary>=2.9.10",
     "python-dotenv>=1.1.1",
     "whitenoise>=6.9.0",
@@ -14,12 +14,30 @@ dependencies = [
 # Dipendenze di sviluppo
 dev = [
    "django-debug-toolbar>=6.0.0",
+   "djlint>=1.36.4",
 ]
 # Dipendenze aggiuntive per il testing
 test = [
-    
+
 ]
 # Dipendenze per lo stage (es. librerie per monitoraggio)
 stage = [
-    
+
 ]
+#linting
+[tool.djlint]
+profile="django"
+ignore = "H031"
+
+[tool.black]
+line-length = 88
+target-version = ['py313']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "django"
+combine_as_imports = true
+include_trailing_comma = true
+line_length = 88
+multi_line_output = 3
+known_first_party = ["config"]
