@@ -38,6 +38,25 @@
     color: #860876;
   }
 }
+
+.accent-primary .btn-link,
+.accent-primary .nav-tabs .nav-link,
+.accent-primary
+  a:not(.dropdown-item):not(.btn-app):not(.nav-link):not(.brand-link):not(
+    .page-link
+  ):not(.btn):not(.sidebar) {
+  color: white;
+}
+
+.accent-primary .btn-link,
+.accent-primary .nav-tabs .nav-link,
+.accent-primary
+  a:not(.dropdown-item):not(.btn-app):not(.nav-link):not(.brand-link):not(
+    .page-link
+  ):not(.btn):not(.sidebar):hover {
+  color: #d40bba;
+}
+
 [class*="sidebar-dark-"] {
   background-color: #393f44;
   color: #fff;
@@ -58,4 +77,9 @@
 [class*="sidebar-dark-"] {
   background-color: #393f44;
   color: #fff;
+}
+
+.login-logo img {
+  width: 200px;
+  height: auto;
 }
