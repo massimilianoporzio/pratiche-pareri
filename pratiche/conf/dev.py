@@ -35,3 +35,12 @@ MEDIA_URL = "/media/"
 
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 MEDIA_ROOT = os.path.join(BASE_DIR, "mediafiles")
+
+LOGGING["formatters"]["colored"] = {
+    "()": "colorlog.ColoredFormatter",
+    "format": "%(log_color)s%(asctime)s %(levelname)s %(name)s %(bold_white)s%(message)s",
+    "datefmt": "%d-%m-%Y %H:%M:%S",
+}
+LOGGING["loggers"]["pratiche"]["level"] = "DEBUG"
+LOGGING["handlers"]["console"]["level"] = "DEBUG"
+LOGGING["handlers"]["console"]["formatter"] = "colored"
