@@ -37,17 +37,18 @@ class Model(models.Model):
         abstract = True
 
     def save(self, *args, **kwargs):
+
         user = get_current_user()
         if user and not user.is_anonymous:
             # Se il record è nuovo (non ha ancora una chiave primaria)
             if not self.pk:
                 self.created_by = user
                 self.created_by_fullname = (
-                    user.get_full_name() if hasattr(user, "full_name") else str(user)
+                    user.nome_utente if hasattr(user, "nome_utente") else str(user)
                 )
             # L'utente che ha fatto l'ultima modifica è sempre l'utente corrente
             self.updated_by = user
             self.updated_by_fullname = (
-                user.get_full_name() if hasattr(user, "full_name") else str(user)
+                user.nome_utente if hasattr(user, "nome_utente") else str(user)
             )
         super().save(*args, **kwargs)
