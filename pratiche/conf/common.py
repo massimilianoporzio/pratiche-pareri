@@ -28,17 +28,26 @@ THIRD_PARTY_APPS_BEFORE_DJANGO = [
 
 THIRD_PARTY_APPS = [
     "debug_toolbar",
+    "cities_light",
 ]
 
 APPS = [
     "users",
 ]
 
+# Impostazioni di django-cities-light
+CITIES_LIGHT_TRANSLATION_LANGUAGES = ["it"]
+CITIES_LIGHT_INCLUDE_COUNTRIES = ["IT"]
+CITIES_LIGHT_INCLUDE_CITY_TYPES = ["PPL", "PPLA", "PPLA2", "PPLA3", "PPLA4"]
+CITIES_LIGHT_ENABLE_GEOCODING = True
+
 INSTALLED_APPS = THIRD_PARTY_APPS_BEFORE_DJANGO + DJANGO_APPS + THIRD_PARTY_APPS + APPS
+
 SITE_ID = 1
 
 
 JAZZMIN_SETTINGS = {
+    # css per cambiare qualche elemento
     "custom_css": "css/admin.css",
     # title of the window (Will default to current_admin_site.site_title if absent or None)
     "site_title": "Pratiche & Pareri",
