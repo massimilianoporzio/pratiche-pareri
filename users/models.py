@@ -1,4 +1,7 @@
 # Create your models here.
+from concurrency.fields import IntegerVersionField
+from crum import get_current_user
+from django.conf import settings
 from django.contrib.auth.models import AbstractUser, BaseUserManager
 from django.db import models
 from django.utils.translation import gettext_lazy as _
@@ -55,6 +58,30 @@ class CustomUser(AbstractUser):
     )
 
     # Aggiungi qui eventuali altri campi personalizzati
+    version = IntegerVersionField()
+
+    created_by = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name="created_%(class)s_set",
+    )
+    created_by_fullname = models.CharField(max_length=150, blank=True)
+    updated_by = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name="updated_%(class)s_set",
+    )
+    updated_by_fullname = models.CharField(max_length=150, blank=True)
+
+    created_at = models.DateTimeField(
+        _("created at"),
+        auto_now_add=True,
+    )
+    updated_at = models.DateTimeField(_("updated at"), auto_now=True)
 
     def __str__(self):
         return self.get_full_name()
@@ -72,3 +99,34 @@ class CustomUser(AbstractUser):
     def get_short_name(self):
         """Restituisce il prefisso dell'email come nome breve."""
         return self.email_prefix_display
+
+    @property
+    def nome_utente(self):
+        """Restituisce il nome completo dell'utente."""
+        if self.first_name and self.last_name:
+            return f"{self.first_name} {self.last_name}"
+        elif self.first_name:
+            return self.first_name
+        elif self.last_name:
+            return self.last_name
+        return self.get_short_name()
+
+    def save(self, *args, **kwargs):
+
+        if not self.username and self.email:
+            self.username = self.email_prefix_display
+        user = get_current_user()
+        if user and not user.is_anonymous:
+            # Se il record è nuovo (non ha ancora una chiave primaria)
+            if not self.pk:
+                self.created_by = user
+                self.created_by_fullname = (
+                    user.nome_utente if hasattr(user, "nome_utente") else str(user)
+                )
+            # L'utente che ha fatto l'ultima modifica è sempre l'utente corrente
+            self.updated_by = user
+            self.updated_by_fullname = (
+                user.nome_utente if hasattr(user, "nome_utente") else str(user)
+            )
+
+        super().save(*args, **kwargs)
