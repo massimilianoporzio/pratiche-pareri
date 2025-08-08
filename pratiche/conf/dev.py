@@ -44,5 +44,3 @@ LOGGING["formatters"]["colored"] = {
 LOGGING["loggers"]["pratiche"]["level"] = "DEBUG"
 LOGGING["handlers"]["console"]["level"] = "DEBUG"
 LOGGING["handlers"]["console"]["formatter"] = "colored"
-
-
