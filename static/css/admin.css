@@ -27,6 +27,11 @@
   }
 }
 
+/* Selettore che agisce solo sull'utente nella sidebar */
+.main-sidebar .user-panel .info a {
+  color: white !important;
+}
+
 .accent-primary .btn-link,
 .accent-primary .nav-tabs .nav-link,
 .accent-primary
@@ -37,15 +42,6 @@
   hover {
     color: #860876;
   }
-}
-
-.accent-primary .btn-link,
-.accent-primary .nav-tabs .nav-link,
-.accent-primary
-  a:not(.dropdown-item):not(.btn-app):not(.nav-link):not(.brand-link):not(
-    .page-link
-  ):not(.btn):not(.sidebar) {
-  color: white;
 }
 
 .accent-primary .btn-link,
