@@ -76,7 +76,7 @@ class CustomUser(AbstractUser):
         return self.email_prefix_display
 
     @property
-    def get_full_name(self):
+    def full_name(self):
         """Restituisce il nome completo dell'utente."""
         if self.first_name and self.last_name:
             return f"{self.first_name} {self.last_name}"
