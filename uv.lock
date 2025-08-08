@@ -91,6 +91,27 @@ wheels = [
 ]
 
 [[package]]
+name = "django-concurrency"
+version = "2.7"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/7d/b7/34f3f007ba189497bebb48eb543572f00cfdd40b86061baf8ca649a978d0/django_concurrency-2.7.tar.gz", hash = "sha256:90b7091039920e759a6b6feb1d481d918f3d6105bd1e2bff09ab781c2734cff3", size = 20701, upload-time = "2025-04-03T17:27:19.496Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/4d/e9/7a332cef95a91598674994a6fda02ef88eee7d903af364444f15ddeab660/django_concurrency-2.7-py3-none-any.whl", hash = "sha256:3dfc1e7d1db436d578faf782c0027fac8296d34c175230ebcf91086c380ade88", size = 28017, upload-time = "2025-04-03T17:27:18.168Z" },
+]
+
+[[package]]
+name = "django-crum"
+version = "0.7.9"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "django" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/34/1d/c56588f67130aeef8828e47535e8551337d2ae02f91f1414da61bc5e49fb/django-crum-0.7.9.tar.gz", hash = "sha256:65e9bc0f070a663fafc4d9e357f45fd4e6f01838b20a9e2fb7670f5706754288", size = 5168, upload-time = "2020-11-10T17:15:35.124Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/cd/f9/8fad70a3bd011a6be7c5c6067278f006a25341eb39d901fbda307e26804c/django_crum-0.7.9-py2.py3-none-any.whl", hash = "sha256:037cc8b822975bb1d41cd24269b59a512cc77448fadc3f34ab9a17b229b4b471", size = 4714, upload-time = "2020-11-10T17:15:33.781Z" },
+]
+
+[[package]]
 name = "django-debug-toolbar"
 version = "6.0.0"
 source = { registry = "https://pypi.org/simple" }
@@ -222,6 +243,8 @@ source = { virtual = "." }
 dependencies = [
     { name = "colorlog" },
     { name = "django" },
+    { name = "django-concurrency" },
+    { name = "django-crum" },
     { name = "django-jazzmin" },
     { name = "pre-commit" },
     { name = "psycopg2-binary" },
@@ -239,6 +262,8 @@ dev = [
 requires-dist = [
     { name = "colorlog", specifier = ">=6.9.0" },
     { name = "django", specifier = ">=5.2.5" },
+    { name = "django-concurrency", specifier = ">=2.7" },
+    { name = "django-crum", specifier = ">=0.7.9" },
     { name = "django-jazzmin", specifier = ">=3.0.1" },
     { name = "pre-commit", specifier = ">=4.2.0" },
     { name = "psycopg2-binary", specifier = ">=2.9.10" },
