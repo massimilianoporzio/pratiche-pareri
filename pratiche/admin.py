@@ -3,14 +3,14 @@ from cities_light.models import City, Country, Region
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from django.contrib.auth.models import Group
+from django.utils.translation import gettext_lazy as _
 
 from pareri.models import TipoOrigine
 from users.models import CustomUser
 
 # Nome del gruppo che avrà accesso completo
 FULL_ACCESS_GROUP_NAME = "Full Access Admin"
-# Specifica qui l'username del superuser che deve avere accesso completo
-FULL_ACCESS_SUPERUSER_USERNAME = "massimiliano.porzio"
+
 
 # Definisci la lista delle app autorizzate per gli altri superuser
 AUTHORIZED_APPS = [
@@ -87,10 +87,45 @@ class CustomUserAdmin(UserAdmin):
     # I filtri laterali
     list_filter = ("is_staff", "is_superuser", "is_active", "groups", "gender")
 
-    # Aggiungi il campo 'gender' ai fieldsets per la modifica/visualizzazione
-    fieldsets = UserAdmin.fieldsets + ((None, {"fields": ("gender",)}),)
-    # Aggiungi il campo 'gender' ai add_fieldsets per la creazione di nuovi utenti
-    add_fieldsets = UserAdmin.add_fieldsets + ((None, {"fields": ("gender",)}),)
+    # Ridefinisci fieldsets usando la funzione di traduzione
+    fieldsets = (
+        (None, {"fields": ("username", "password")}),
+        (
+            _("Personal info"),
+            {"fields": ("first_name", "last_name", "email", "gender")},
+        ),
+        (
+            _("Permissions"),
+            {
+                "fields": (
+                    "is_active",
+                    "is_staff",
+                    "is_superuser",
+                    "groups",
+                    "user_permissions",
+                )
+            },
+        ),
+        (_("Important dates"), {"fields": ("last_login", "date_joined")}),
+    )
+
+    # Ridefinisci add_fieldsets usando la funzione di traduzione
+    add_fieldsets = (
+        (
+            None,
+            {
+                "classes": ("wide",),
+                "fields": (
+                    "username",
+                    "email",
+                    "gender",
+                    "is_staff",
+                    "is_active",
+                    "groups",
+                ),
+            },
+        ),
+    )
 
     def changeform_view(self, request, object_id=..., form_url=..., extra_context=...):
         extra_context = extra_context or {}
