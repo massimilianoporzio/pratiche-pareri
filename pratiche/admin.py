@@ -4,14 +4,17 @@ from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from django.contrib.auth.models import Group
 
+from pareri.models import TipoOrigine
 from users.models import CustomUser
 
+# Nome del gruppo che avrà accesso completo
+FULL_ACCESS_GROUP_NAME = "Full Access Admin"
 # Specifica qui l'username del superuser che deve avere accesso completo
 FULL_ACCESS_SUPERUSER_USERNAME = "massimiliano.porzio"
 
 # Definisci la lista delle app autorizzate per gli altri superuser
 AUTHORIZED_APPS = [
-    "auth",
+    "pareri",
     # Aggiungi qui gli 'app_label' delle app che vuoi mostrare
 ]
 
@@ -20,15 +23,15 @@ class CustomAdminSite(admin.AdminSite):
     def get_app_list(self, request):
         app_list = super().get_app_list(request)
 
-        # Se l'utente non è un superuser o ha l'username con accesso completo,
-        # restituisci la lista completa delle app
-        if (
-            not request.user.is_superuser
-            or request.user.username == FULL_ACCESS_SUPERUSER_USERNAME
-        ):
+        # Controlla se l'utente appartiene al gruppo "Full Access Admin"
+        user_has_full_access_group = (
+            request.user.is_superuser
+            and request.user.groups.filter(name=FULL_ACCESS_GROUP_NAME).exists()
+        )
+
+        if user_has_full_access_group:
             return app_list
         else:
-            # Altrimenti, filtra la lista per mostrare solo le app autorizzate
             return [app for app in app_list if app["app_label"] in AUTHORIZED_APPS]
 
 
@@ -93,3 +96,8 @@ class CustomUserAdmin(UserAdmin):
         extra_context = extra_context or {}
         extra_context["show_close"] = True
         return super().changeform_view(request, object_id, form_url, extra_context)
+
+
+@admin.register(TipoOrigine, site=custom_admin_site)
+class TipoOrigineAdmin(admin.ModelAdmin):
+    fields = ("nome",)

@@ -33,6 +33,7 @@ THIRD_PARTY_APPS = [
 
 APPS = [
     "users",
+    "pareri",
 ]
 
 # Impostazioni di django-cities-light
