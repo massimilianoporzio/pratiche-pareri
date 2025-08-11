@@ -65,6 +65,8 @@ JAZZMIN_SETTINGS = {
     "use_google_fonts_cdn": True,
     # Whether to show the UI customizer on the sidebar
     "show_ui_builder": True,
+    # abilita traduzione in jazzmin
+    "i18n_enabled": True,
 }
 JAZZMIN_UI_TWEAKS = {
     "navbar_small_text": False,
@@ -164,6 +166,11 @@ TIME_ZONE = "Europe/Rome"
 USE_I18N = True
 
 USE_TZ = True
+
+LANGUAGES = [
+    ("en", "English"),
+    ("it", "Italiano"),
+]
 
 
 # Static files (CSS, JavaScript, Images)

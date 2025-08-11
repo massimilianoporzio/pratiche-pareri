@@ -3,4 +3,5 @@ max-line-length = 88
 ignore = E501, W503
 per-file-ignores =
     pratiche/conf/*:F405 F403 F401,
-    users/*: F401
+    users/*: F401,
+    pratiche/*: F401,
