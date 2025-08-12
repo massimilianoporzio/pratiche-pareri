@@ -17,3 +17,21 @@ class TipoOrigine(MyModel):
 
     def __str__(self):
         return self.nome
+
+
+class TipoProcesso(MyModel):
+    """
+    Model representing the type of process.
+    """
+
+    nome = models.CharField(max_length=50, verbose_name="nome", unique=True)
+    descrizione = models.TextField(
+        max_length=200, verbose_name="descrizione", blank=True, null=True
+    )
+
+    class Meta:
+        verbose_name = "Tipo di processo"
+        verbose_name_plural = "Tipi di processo"
+
+    def __str__(self):
+        return self.nome
