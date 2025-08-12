@@ -21,3 +21,6 @@ dumpdata:
 .PHONY: loaddata
 loaddata:
 	uv run manage.py loaddata initial_data.json
+.PHONY: compilemessages
+compilemessages:
+	uv run manage.py compilemessages

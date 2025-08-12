@@ -1,0 +1,53 @@
+#: .\pratiche\admin.py:94
+msgid "Personal info"
+msgstr ""
+
+#: .\pratiche\admin.py:98
+msgid "Permissions"
+msgstr ""
+
+#: .\pratiche\admin.py:109
+msgid "Important dates"
+msgstr ""
+
+#: .\users\apps.py:8
+msgid "Utenti"
+msgstr ""
+
+#: .\users\models.py:14
+msgid "L'indirizzo email deve essere impostato"
+msgstr ""
+
+#: .\users\models.py:30
+msgid "Superuser deve avere is_staff=True."
+msgstr ""
+
+#: .\users\models.py:32
+msgid "Superuser deve avere is_superuser=True."
+msgstr ""
+
+#: .\users\models.py:46
+msgid "indirizzo email aziendale"
+msgstr ""
+
+#: .\users\models.py:57
+msgid "genere"
+msgstr ""
+
+#: .\users\models.py:81 .\utils\model.py:16
+msgid "created at"
+msgstr ""
+
+#: .\users\models.py:84 .\utils\model.py:17
+msgid "updated at"
+msgstr ""
+
+#: .\utils\model.py:15
+msgid "id"
+msgstr ""
+
+msgid "Log out"
+msgstr "Logout"
+
+msgid "See Profile"
+msgstr "Vedi il profilo"

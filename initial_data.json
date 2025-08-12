@@ -1,3 +1,4 @@
+DEBUG ORA VALE: True
 [
 {
   "model": "admin.logentry",
@@ -257,6 +258,19 @@
     "object_repr": "22161 - Massimiliano Porzio",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"Nome e Cognome\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2025-08-12T14:02:21.422Z",
+    "user": 2,
+    "content_type": 16,
+    "object_id": "698fe25c-c15b-408c-9d41-1ab073a09e38",
+    "object_repr": "controlli non distruttivi in produzione",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
   }
 },
 {
@@ -800,6 +814,42 @@
   }
 },
 {
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add Tipo di pratica",
+    "content_type": 16,
+    "codename": "add_tipopratica"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change Tipo di pratica",
+    "content_type": 16,
+    "codename": "change_tipopratica"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete Tipo di pratica",
+    "content_type": 16,
+    "codename": "delete_tipopratica"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view Tipo di pratica",
+    "content_type": 16,
+    "codename": "view_tipopratica"
+  }
+},
+{
   "model": "auth.group",
   "pk": 1,
   "fields": {
@@ -928,11 +978,19 @@
   }
 },
 {
-  "model": "sessions.session",
-  "pk": "9gqs0qs2sw3bsb0rvtcmdt9ipphxt1tt",
+  "model": "contenttypes.contenttype",
+  "pk": 16,
   "fields": {
-    "session_data": ".eJxVjDsOgzAQRO_iOrLMgj-kTM8ZrF2vHZNEtoShinL3gESRVCPNezNv4XFbs99aXPzM4ipAXH47wvCM5QD8wHKvMtSyLjPJQ5EnbXKqHF-30_07yNjyvjZWK0vkwFAMDHvoYQTsICpWyYAFdC5i0H0iRmuQCfohQTKE0I1OfL7i0zgk:1ulkqD:VtG0CwsCl_wwDyyBO1PSEnWPo-T3HREx3-HTXa1K9rc",
-    "expire_date": "2025-08-26T08:58:45.253Z"
+    "app_label": "pareri",
+    "model": "tipopratica"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "0xf6kmq2gx04hybzecvwpbmzu43afynx",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hA7TGHq0n3PQAYGpGpoUtqV8e7apAvd_vfefynP21r81tLiJ1EXBer0uwWOj1R3IHeut1nHua7LFPSu6IM2Pc6SntfD_Tso3Mq3DpQyBoaI2RrXDcKECIYcYY_kIIsVi5Q4Qy8AxC4MBo3NhMGcTafeH9wmNyk:1uloFg:_2IXdgnqfD40I1vvKdtpXjOr2S9PI-rqf12gAwMM8MQ",
+    "expire_date": "2025-08-26T12:37:16.577Z"
   }
 },
 {
@@ -15289,7 +15347,7 @@
   "pk": 2,
   "fields": {
     "password": "pbkdf2_sha256$1000000$PnpeFFBueGpRtXFCnrfN6y$A75s0cy84WKHUpBzRjX9bKo42t/doIA3+tRPrMqMvnw=",
-    "last_login": "2025-08-12T08:58:45.249Z",
+    "last_login": "2025-08-12T12:37:16.574Z",
     "is_superuser": true,
     "username": "massimiliano.porzio",
     "first_name": "Massimiliano",
@@ -15336,6 +15394,21 @@
     "updated_at": "2025-08-11T15:44:48.363Z",
     "groups": [],
     "user_permissions": []
+  }
+},
+{
+  "model": "pareri.tipopratica",
+  "pk": "698fe25c-c15b-408c-9d41-1ab073a09e38",
+  "fields": {
+    "created_at": "2025-08-12T14:02:21.420Z",
+    "updated_at": "2025-08-12T14:02:21.420Z",
+    "created_by": null,
+    "created_by_fullname": "",
+    "updated_by": 2,
+    "updated_by_fullname": "Massimiliano Porzio",
+    "version": 1755006394739497,
+    "nome": "controlli non distruttivi in produzione",
+    "descrizione": ""
   }
 },
 {

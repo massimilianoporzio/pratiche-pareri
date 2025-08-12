@@ -3,8 +3,25 @@ from django.db import models
 
 from utils.model import Model as MyModel
 
-
 # Create your models here.
+
+
+class TipoPratica(MyModel):
+    """
+    Model representing the type of practice.
+    """
+
+    nome = models.CharField(max_length=50, verbose_name="nome", unique=True)
+    descrizione = models.TextField(verbose_name="descrizione", blank=True, null=True)
+
+    class Meta:
+        verbose_name = "Tipo di pratica"
+        verbose_name_plural = "Tipi di pratica"
+
+    def __str__(self):
+        return self.nome
+
+
 class TipoOrigine(MyModel):
     """
     Model representing the origin type of a document.

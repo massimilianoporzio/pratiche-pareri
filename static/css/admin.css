@@ -92,11 +92,15 @@
   a:not(.dropdown-item):not(.btn-app):not(.nav-link):not(.brand-link):not(
     .page-link
   ):not(.btn) {
-  color: #b909a2;
+  color: #e00f90;
 }
 .btn-primary {
   background-color: #b909a2;
   border-color: #b909a2;
+}
+.btn-primary:hover {
+  background-color: #e00f90;
+  border-color: #e00f90;
 }
 
 [class*="sidebar-dark"] .brand-link,
@@ -106,4 +110,25 @@
 
 [class*="sidebar-dark-"] .nav-header {
   color: white !important;
+}
+/* .btn-success {
+  background-color: rgb(1, 124, 97) !important;
+  border-color: rgb(20, 170, 113) !important;
+} */
+
+.alert-success {
+  background-color: #28a745 !important;
+  border-color: #28a745 !important;
+}
+
+.main-sidebar .brand-text {
+  font-weight: bold !important;
+}
+.sidebar-dark-maroon .nav-sidebar > .nav-item > .nav-link.active,
+.sidebar-light-maroon .nav-sidebar > .nav-item > .nav-link.active {
+  background-color: #e00f90;
+}
+
+.navbar-pink {
+  background-color: #e00f90;
 }

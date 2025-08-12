@@ -68,6 +68,23 @@ JAZZMIN_SETTINGS = {
     "show_ui_builder": True,
     # abilita traduzione in jazzmin
     "i18n_enabled": True,
+    # icons for apps:
+    "icons": {
+        "cities_light.city": "fas fa-city",
+        "cities_light.country": "fas fa-earth-europe",
+        "cities_light.region": "fas fa-map-marker-alt",
+        "pareri.tipoOrigine": "fas fa-building-columns",
+        "pareri.espertoRadioprotezione": "fas fa-radiation",
+        "pareri.tipoPratica": "fas fa-file-invoice",
+        "pareri.tipoProcesso": "fas fa-gear",
+        "users.customuser": "fas fa-user",
+        "auth.Group": "fas fa-users",
+    },
+    # "usermenu_links": [
+    #     {"name": "Logout", "url": "/admin/logout/", "icon": "fas fa-power-off"},
+    # ],
+    # Aggiungi questa linea per disabilitare il link di logout predefinito
+    "show_logout": False,
 }
 JAZZMIN_UI_TWEAKS = {
     "navbar_small_text": False,
@@ -115,6 +132,10 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "debug_toolbar.middleware.DebugToolbarMiddleware",
+]
+
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, "locale"),
 ]
 
 ROOT_URLCONF = "pratiche.urls"
