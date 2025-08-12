@@ -32,6 +32,7 @@ class Model(models.Model):
     )
     updated_by_fullname = models.CharField(max_length=150, blank=True)
     version = IntegerVersionField()
+    is_active = models.BooleanField(default=True, verbose_name=_("ancora attivo"))
 
     class Meta:
         abstract = True

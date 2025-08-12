@@ -39,6 +39,20 @@ class CustomAdminSite(admin.AdminSite):
 custom_admin_site = CustomAdminSite(name="custom_admin")
 
 
+class ActiveModelAdminMixin:
+    def get_queryset(self, request):
+        qs = super().get_queryset(request)
+        return qs.filter(is_active=True)
+
+    def changelist_view(self, request, extra_context=None):
+        if "is_active__exact" not in request.GET:
+            q = request.GET.copy()
+            q["is_active__exact"] = "1"
+            request.GET = q
+            request.META["QUERY_STRING"] = request.GET.urlencode()
+        return super().changelist_view(request, extra_context=extra_context)
+
+
 # Crea le classi ModelAdmin per i modelli di cities_light
 # Puoi personalizzare le liste di visualizzazione e i filtri qui
 @admin.register(City, site=custom_admin_site)
