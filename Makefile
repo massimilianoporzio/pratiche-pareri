@@ -14,4 +14,10 @@ run-server:
 superuser:
 	uv run manage.py createsuperuser
 .PHONY: update
-update: install migrate ;
+update: install migrate
+.PHONY: dumpdata
+dumpdata:
+	uv run manage.py dumpdata --indent 2 > initial_data.json
+.PHONY: loaddata
+loaddata:
+	uv run manage.py loaddata initial_data.json
