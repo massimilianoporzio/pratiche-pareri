@@ -1,21 +1,21 @@
-.sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active,
+/* .sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active,
 .sidebar-light-primary .nav-sidebar > .nav-item > .nav-link.active {
   background-color: #b909a2;
-}
-.btn-primary {
+} */
+/* .btn-primary {
   color: #fff;
   background-color: #b909a2;
   border-color: #b909a2;
   box-shadow: none;
-}
-.navbar-pink {
+} */
+/* .navbar-pink {
   background-color: #b909a2;
 }
 .sidebar-dark-maroon .nav-sidebar > .nav-item > .nav-link.active,
 .sidebar-light-maroon .nav-sidebar > .nav-item > .nav-link.active {
   background-color: #b909a2;
-}
-.accent-primary .btn-link,
+} */
+/* .accent-primary .btn-link,
 .accent-primary .nav-tabs .nav-link,
 .accent-primary
   a:not(.dropdown-item):not(.btn-app):not(.nav-link):not(.brand-link):not(
@@ -25,14 +25,9 @@
   hover {
     color: #860876;
   }
-}
+} */
 
-/* Selettore che agisce solo sull'utente nella sidebar */
-.main-sidebar .user-panel .info a {
-  color: white !important;
-}
-
-.accent-primary .btn-link,
+/* .accent-primary .btn-link,
 .accent-primary .nav-tabs .nav-link,
 .accent-primary
   a:not(.dropdown-item):not(.btn-app):not(.nav-link):not(.brand-link):not(
@@ -42,6 +37,53 @@
   hover {
     color: #860876;
   }
+} */
+
+/* .accent-primary .btn-link,
+.accent-primary .nav-tabs .nav-link,
+.accent-primary
+  a:not(.dropdown-item):not(.btn-app):not(.nav-link):not(.brand-link):not(
+    .page-link
+  ):not(.btn):not(.sidebar):hover {
+  color: #d40bba;
+} */
+/*
+[class*="sidebar-dark-"] {
+  background-color: #393f44;
+  color: #fff;
+} */
+
+/* .accent-primary .btn-link:hover,
+.accent-primary .nav-tabs .nav-link:hover,
+.accent-primary
+  a:not(.dropdown-item):not(.btn-app):not(.nav-link):not(.brand-link):not(
+    .page-link
+  ):not(.btn):hover {
+  color: #860876;
+} */
+
+/* .btn-primary:hover {
+  background-color: #860876;
+} */
+
+.login-logo img {
+  width: 200px;
+  height: auto;
+}
+
+.accent-primary
+  [class*="sidebar-dark-"]
+  .sidebar
+  a:not(.dropdown-item):not(.btn-app):not(.nav-link):not(.brand-link) {
+  color: white !important;
+}
+.accent-primary .btn-link,
+.accent-primary .nav-tabs .nav-link,
+.accent-primary
+  a:not(.dropdown-item):not(.btn-app):not(.nav-link):not(.brand-link):not(
+    .page-link
+  ):not(.btn):hover {
+  color: #dd0bc1 !important;
 }
 
 .accent-primary .btn-link,
@@ -49,33 +91,19 @@
 .accent-primary
   a:not(.dropdown-item):not(.btn-app):not(.nav-link):not(.brand-link):not(
     .page-link
-  ):not(.btn):not(.sidebar):hover {
-  color: #d40bba;
+  ):not(.btn) {
+  color: #b909a2;
+}
+.btn-primary {
+  background-color: #b909a2;
+  border-color: #b909a2;
 }
 
-[class*="sidebar-dark-"] {
-  background-color: #393f44;
-  color: #fff;
+[class*="sidebar-dark"] .brand-link,
+[class*="sidebar-dark"] .brand-link .pushmenu {
+  color: white !important;
 }
 
-.accent-primary .btn-link:hover,
-.accent-primary .nav-tabs .nav-link:hover,
-.accent-primary
-  a:not(.dropdown-item):not(.btn-app):not(.nav-link):not(.brand-link):not(
-    .page-link
-  ):not(.btn):hover {
-  color: #860876;
-}
-
-.btn-primary:hover {
-  background-color: #860876;
-}
-[class*="sidebar-dark-"] {
-  background-color: #393f44;
-  color: #fff;
-}
-
-.login-logo img {
-  width: 200px;
-  height: auto;
+[class*="sidebar-dark-"] .nav-header {
+  color: white !important;
 }

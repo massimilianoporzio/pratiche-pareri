@@ -6,7 +6,8 @@ from .common import *
 
 load_dotenv()
 
-DEBUG = os.environ.get("DEBUG", "0") == "1"
+DEBUG = os.getenv("DEBUG", "0") == "1"
+print(f"DEBUG ORA VALE: {DEBUG}")
 PRODUCTION = os.environ.get("PRODUCTION", "0") == "1"
 SECRET_KEY = os.environ.get("SECRET_KEY", "your-default-secret-key")
 ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "*").split(" ")
