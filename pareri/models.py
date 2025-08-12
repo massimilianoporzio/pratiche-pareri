@@ -1,3 +1,4 @@
+from django.core.validators import RegexValidator
 from django.db import models
 
 from utils.model import Model as MyModel
@@ -35,3 +36,29 @@ class TipoProcesso(MyModel):
 
     def __str__(self):
         return self.nome
+
+
+class EspertoRadioprotezione(MyModel):
+    number_validator = RegexValidator(
+        r"^\d{5}$",
+        "Assicurati che il numero di iscrizione contenga esattamente 5 cifre.",
+    )
+    numero_iscrizione = models.CharField(
+        max_length=5,
+        verbose_name="Numero di iscrizione",
+        unique=True,
+        validators=[number_validator],
+        help_text="Inserisci un valore numerico di 5 cifre.",
+    )
+    full_name = models.TextField(verbose_name="Nome e Cognome", blank=True, null=True)
+
+    class Meta:
+        verbose_name = "Esperto di Radioprotezione"
+        verbose_name_plural = "Esperti di Radioprotezione"
+
+    def __str__(self):
+        return (
+            self.numero_iscrizione
+            + " - "
+            + (self.full_name if self.full_name else "Nome non disponibile")
+        )
