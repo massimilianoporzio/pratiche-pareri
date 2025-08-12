@@ -1,5 +1,6 @@
 #! /usr/bin/env bash
 export DEBUG=1
+export USE_DOCKER_FOR_DB=0 #use 1 if using docker
 export PRODUCTION=0
 export SECRET_KEY='your-secret-key'
 export DJANGO_ALLOWED_HOSTS=* localhost 127.0.0.1 [::1]

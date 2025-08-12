@@ -1,5 +1,6 @@
 from django.core.validators import RegexValidator
 from django.db import models
+from django.utils.translation import gettext_lazy as _
 
 from utils.model import Model as MyModel
 
@@ -70,8 +71,8 @@ class EspertoRadioprotezione(MyModel):
     full_name = models.TextField(verbose_name="Nome e Cognome", blank=True, null=True)
 
     class Meta:
-        verbose_name = "Esperto di Radioprotezione"
-        verbose_name_plural = "Esperti di Radioprotezione"
+        verbose_name = _("Esperto di Radioprotezione")
+        verbose_name_plural = _("Esperti di Radioprotezione")
 
     def __str__(self):
         return (
