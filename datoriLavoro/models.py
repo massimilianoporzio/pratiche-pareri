@@ -1,3 +1,5 @@
+import logging
+
 import codicefiscale as cf
 from cities_light.models import City, Country, Region
 from django.db import models
@@ -8,7 +10,8 @@ from verify_vat_number.vies import get_from_eu_vies
 from utils.model import Model as MyModel
 
 # Crea le classi ModelAdmin per i modelli di cities_light
-# Puoi personalizzare le liste di visualizzazione e i filtri qui
+
+logger = logging.getLogger(__name__)
 
 
 class CityProxy(City):
@@ -58,11 +61,11 @@ class Sede(MyModel):
 
 def validate_p_iva_italiana(value):
 
-    print("P IVA VALIDA? ", value)
     try:
         data = get_from_eu_vies("IT" + value)
+        logger.info("P IVA VALIDA? %s", data)
 
-    except Exception as e:
+    except Exception:
 
         raise ValidationError(
             _("%(value)s non è una Partita IVA italiana valida."),
