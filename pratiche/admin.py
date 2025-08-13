@@ -1,6 +1,11 @@
 # tuo_progetto/admin.py
 from cities_light.models import City, Country, Region
 from django.contrib import admin
+from django.contrib.admin.templatetags.admin_modify import (
+    register as admin_modify,
+    submit_row,
+)
+from django.contrib.admin.templatetags.base import InclusionAdminNode
 from django.contrib.auth.admin import UserAdmin
 from django.contrib.auth.models import Group
 from django.utils.translation import gettext_lazy as _
@@ -37,6 +42,22 @@ class CustomAdminSite(admin.AdminSite):
 
 # Crea un'istanza dell'AdminSite personalizzato
 custom_admin_site = CustomAdminSite(name="custom_admin")
+
+
+def custom_submit_row(context):
+    """
+    Display the row of buttons for delete and save.
+    """
+    ctx = submit_row(context)
+    ctx.update({"show_close": True})
+    return ctx
+
+
+@admin_modify.tag(name="submit_row")
+def submit_row_tag(parser, token):
+    return InclusionAdminNode(
+        parser, token, func=custom_submit_row, template_name="submit_line.html"
+    )
 
 
 class ActiveModelAdminMixin:
