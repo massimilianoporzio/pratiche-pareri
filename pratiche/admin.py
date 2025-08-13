@@ -1,5 +1,4 @@
 # tuo_progetto/admin.py
-from cities_light.models import City, Country, Region
 from django.contrib import admin
 from django.contrib.admin.templatetags.admin_modify import (
     register as admin_modify,
@@ -74,28 +73,6 @@ class ActiveModelAdminMixin:
         return super().changelist_view(request, extra_context=extra_context)
 
 
-# Crea le classi ModelAdmin per i modelli di cities_light
-# Puoi personalizzare le liste di visualizzazione e i filtri qui
-@admin.register(City, site=custom_admin_site)
-class CityAdmin(admin.ModelAdmin):
-    list_display = ("name", "country", "region")
-    list_filter = ("country", "region")
-    search_fields = ("name",)
-
-
-@admin.register(Region, site=custom_admin_site)
-class RegionAdmin(admin.ModelAdmin):
-    list_display = ("name", "country")
-    list_filter = ("country",)
-    search_fields = ("name",)
-
-
-@admin.register(Country, site=custom_admin_site)
-class CountryAdmin(admin.ModelAdmin):
-    list_display = ("name", "code2")
-    search_fields = ("name", "code2")
-
-
 # Annulla la registrazione del modello  Group dall'admin di default
 admin.site.unregister(Group)
 
@@ -166,8 +143,3 @@ class CustomUserAdmin(UserAdmin):
         extra_context = extra_context or {}
         extra_context["show_close"] = True
         return super().changeform_view(request, object_id, form_url, extra_context)
-
-
-@admin.register(TipoOrigine, site=custom_admin_site)
-class TipoOrigineAdmin(admin.ModelAdmin):
-    fields = ("nome",)

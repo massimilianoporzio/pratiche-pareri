@@ -31,15 +31,17 @@ THIRD_PARTY_APPS = [
     "cities_light",
 ]
 
-APPS = [
-    "users",
-    "pareri",
-]
+APPS = ["users", "pareri", "datoriLavoro"]
 
 # Impostazioni di django-cities-light
 CITIES_LIGHT_TRANSLATION_LANGUAGES = ["it"]
 CITIES_LIGHT_INCLUDE_COUNTRIES = ["IT"]
-CITIES_LIGHT_INCLUDE_CITY_TYPES = ["PPL", "PPLA", "PPLA2", "PPLA3", "PPLA4"]
+# CITIES_LIGHT_INCLUDE_CITY_TYPES = ["PPL", "PPLA", "PPLA2", "PPLA3", "PPLA4"]
+CITIES_LIGHT_CITY_SOURCES = [
+    "http://download.geonames.org/export/dump/cities500.zip",
+    # Oppure, per una copertura ancora più ampia, usa cities500
+    # 'http://download.geonames.org/export/dump/cities500.zip',
+]
 CITIES_LIGHT_ENABLE_GEOCODING = True
 
 INSTALLED_APPS = THIRD_PARTY_APPS_BEFORE_DJANGO + DJANGO_APPS + THIRD_PARTY_APPS + APPS
@@ -57,7 +59,7 @@ JAZZMIN_SETTINGS = {
     # Title on the brand (19 chars max) (defaults to current_admin_site.site_header if absent or None)
     "site_brand": "Pratiche & Pareri",
     # Logo to use for your site, must be present in static files, used for brand on top left
-    "site_logo": "images/logo.png",
+    "site_logo": "images/logo2.png",
     # CSS classes that are applied to the logo above
     "site_logo_classes": "img-circle",
     # Copyright on the footer
@@ -70,15 +72,17 @@ JAZZMIN_SETTINGS = {
     "i18n_enabled": True,
     # icons for apps:
     "icons": {
-        "cities_light.city": "fas fa-city",
-        "cities_light.country": "fas fa-earth-europe",
-        "cities_light.region": "fas fa-map-marker-alt",
+        "cities_light.cityProxy": "fas fa-city",
+        "cities_light.countryProxy": "fas fa-earth-europe",
+        "cities_light.regionProxy": "fas fa-map-marker-alt",
         "pareri.tipoOrigine": "fas fa-building-columns",
         "pareri.espertoRadioprotezione": "fas fa-radiation",
         "pareri.tipoPratica": "fas fa-file-invoice",
         "pareri.tipoProcesso": "fas fa-gear",
         "users.customuser": "fas fa-user",
         "auth.Group": "fas fa-users",
+        "datoriLavoro.sede": "fas fa-location-dot",
+        "datoriLavoro.datoreLavoro": "fas fa-user-tie",
     },
     # "usermenu_links": [
     #     {"name": "Logout", "url": "/admin/logout/", "icon": "fas fa-power-off"},
