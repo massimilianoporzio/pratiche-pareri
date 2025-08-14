@@ -28,3 +28,10 @@ repos:
       - id: djlint-reformat-django
       - id: djlint-django
         language_version: python3.13
+  - repo: local
+    hooks:
+      - id: prettier
+        name: Prettier
+        entry: pnpm exec prettier --write
+        language: system
+        types: [css]

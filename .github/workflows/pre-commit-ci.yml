@@ -1,17 +1,25 @@
-# .github/workflows/ci.yml
-name: pre-commit
+name: Pre-Commit Checks
 
-on:
-  pull_request:
-  push:
-    branches: [main]
+on: [pull_request]
 
 jobs:
   pre-commit:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "pnpm"
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 8
+          run_install: true
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.13" # Assicurati che questa sia la versione corretta del tuo progetto
-      - uses: pre-commit/action@v3.0.1 # Questo è il nome dell'azione corretto
+          python-version: "3.13"
+      - run: pnpm install
+      - run: |
+          pip install pre-commit
+          pre-commit install
+      - run: pre-commit run --all-files

@@ -138,3 +138,42 @@
 #id_codice_fiscale {
   text-transform: uppercase;
 }
+
+.select2-container--default
+  .select2-selection--multiple
+  .select2-selection__choice__display {
+  padding-left: 7px !important;
+}
+.select2-container--default.select2-container--open {
+  width: 100% !important;
+}
+.select2-container {
+  width: 100% !important;
+}
+.select2-search__field {
+  width: 150px !important; /* Aumenta il valore per renderlo più grande */
+}
+/* static/css/custom.css */
+/* Stile del contenitore del campo di ricerca */
+.select2-container .select2-search--inline {
+  position: relative;
+}
+
+/* Stile del campo di ricerca */
+.select2-container .select2-search--inline .select2-search__field {
+  height: 26px !important;
+  padding-left: 25px !important; /* Aumenta questo valore per creare più spazio */
+  padding-right: 5px; /* Aggiungi un po' di padding anche a destra */
+}
+
+/* Pseudo-elemento per l'icona */
+.select2-container .select2-search--inline::before {
+  content: "\f002";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 8px; /* Posizione fissa dell'icona */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+}
