@@ -62,6 +62,8 @@ JAZZMIN_SETTINGS = {
     "site_logo": "images/logo2.png",
     # CSS classes that are applied to the logo above
     "site_logo_classes": "img-circle",
+    # Welcome text on the login screen
+    "welcome_sign": "Benvenuti su Pratiche&Pareri",
     # Copyright on the footer
     "copyright": "Massimiliano Porzio",
     # Whether to link font from fonts.googleapis.com (use custom_css to supply font otherwise)
