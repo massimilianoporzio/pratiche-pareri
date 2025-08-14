@@ -54,3 +54,6 @@ ifeq ($(USE_DOCKER_FOR_DB),1)
 else
 	@echo "USE_DOCKER_FOR_DB is not 1. Using an existing database."
 endif
+.PHONY: watch-css
+watch-css:
+	pnpm watch

@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+/* I tuoi stili personalizzati per la pagina di login */
+.jazzmin-login-page {
+  background-color: #60758a; /* Questo è un grigio scuro */
+}
+/* Sovrascrivi il colore di sfondo della card */
+.login-card-body,
+.register-card-body {
+  background-color: #fff !important; /* Colore bianco per la card, usa !important per forzare l'override */
+}
+/* Sovrascrivi il colore del pulsante quando è in stato di focus o attivo */
+/* Sovrascrivi il colore del pulsante usando la variabile CSS */
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: var(--colore-principale) !important;
+  border-color: var(--colore-principale) !important;
+}
+/* Stili per il menu in alto e gli elementi del dropdown */
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: var(--colore-principale) !important;
+  color: white !important;
+}
+
+/* Sovrascrivi anche gli stili per i link della navbar */
+.nav-link:hover,
+.nav-link:focus {
+  background-color: var(--colore-principale) !important;
+  color: white !important;
+}
+.accent-primary .dropdown-item.active,
+.accent-primary .dropdown-item:active {
+  background-color: var(--colore-principale) !important;
+  color: white !important;
+}
+/* Stile per l'icona "History" */
+.bg-blue {
+  background-color: var(--colore-principale) !important;
+}
+.content-wrapper {
+  background-color: #f4f4f4;
+}

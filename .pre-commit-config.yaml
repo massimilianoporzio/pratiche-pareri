@@ -16,6 +16,7 @@ repos:
     rev: 7.3.0
     hooks:
       - id: flake8
+        exclude: "node_modules/"
         language_version: python3.13
   - repo: https://github.com/psf/black-pre-commit-mirror
     rev: 25.1.0
@@ -28,3 +29,10 @@ repos:
       - id: djlint-reformat-django
       - id: djlint-django
         language_version: python3.13
+  - repo: local
+    hooks:
+      - id: prettier
+        name: Prettier
+        entry: pnpm exec prettier --write
+        language: system
+        types: [css]

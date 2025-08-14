@@ -1,6 +1,7 @@
 [flake8]
 max-line-length = 88
 ignore = E501, W503
+exclude = .git,__pycache__,docs,venv,node_modules
 per-file-ignores =
     pratiche/conf/*:F405 F403 F401,
     users/*: F401,
