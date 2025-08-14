@@ -8,25 +8,22 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Installa Node.js e configura il cache per pnpm
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "pnpm"
 
-      # Installa pnpm e le sue dipendenze
-      - uses: pnpm/action-setup@v3
-        with:
-          version: 8
-          run_install: true
+      - name: Install pnpm
+        run: npm install -g pnpm
 
-      # Installa Python
+      - name: Install dependencies with pnpm
+        run: pnpm install
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.13"
 
-      # Installa pre-commit e le sue dipendenze
-      - run: pip install pre-commit
+      - name: Install pre-commit
+        run: pip install pre-commit
 
-      # Esegue pre-commit
-      - run: pre-commit run --all-files
+      - name: Run pre-commit hooks
+        run: pre-commit run --all-files
