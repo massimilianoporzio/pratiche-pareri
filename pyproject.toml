@@ -19,22 +19,15 @@ dependencies = [
 ]
 [dependency-groups]
 # Dipendenze di sviluppo
-dev = [
-   "django-debug-toolbar>=6.0.0",
-   "djlint>=1.36.4",
-]
+dev = ["django-debug-toolbar>=6.0.0", "djlint>=1.36.4"]
 # Dipendenze aggiuntive per il testing
-test = [
-
-]
+test = []
 # Dipendenze per lo stage (es. librerie per monitoraggio)
-stage = [
-
-]
+stage = []
 #linting
 [tool.djlint]
-profile="django"
-ignore = "H031"
+profile = "django"
+ignore = "H031,T002,H030,H006,H021,H029,H023"
 
 [tool.black]
 line-length = 88

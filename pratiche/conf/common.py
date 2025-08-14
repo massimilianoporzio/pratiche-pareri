@@ -59,9 +59,13 @@ JAZZMIN_SETTINGS = {
     # Title on the brand (19 chars max) (defaults to current_admin_site.site_header if absent or None)
     "site_brand": "Pratiche & Pareri",
     # Logo to use for your site, must be present in static files, used for brand on top left
-    "site_logo": "images/logo2.png",
+    "site_logo": "images/icon.png",
+    # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
+    "login_logo": "images/logo2.png",
+    # Logo to use for login form in dark themes (defaults to login_logo)
+    "login_logo_dark": "images/logo2.png",
     # CSS classes that are applied to the logo above
-    "site_logo_classes": "img-circle",
+    "site_logo_classes": "img-circle  bg-transparent",
     # Welcome text on the login screen
     "welcome_sign": "Benvenuti su Pratiche&Pareri",
     # Copyright on the footer

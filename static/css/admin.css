@@ -177,3 +177,10 @@
   transform: translateY(-50%);
   color: #888;
 }
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: var(--colore-principale) !important;
+  border-color: var(--colore-principale) !important;
+}
