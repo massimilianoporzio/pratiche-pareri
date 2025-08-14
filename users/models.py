@@ -44,7 +44,9 @@ class CustomUser(AbstractUser):
     REQUIRED_FIELDS = []  # Campi richiesti oltre a USERNAME_FIELD e password
 
     email = models.EmailField(_("indirizzo email aziendale"), unique=True)
-
+    username = models.CharField(
+        _("nome utente"), max_length=150, unique=True, blank=True, null=True
+    )
     GENDER_CHOICES = [
         ("M", "Maschio"),
         ("F", "Femmina"),
