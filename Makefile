@@ -24,6 +24,16 @@ update: install migrate
 .PHONY: dumpdata
 dumpdata:
 	uv run manage.py dumpdata --exclude auth.permission --exclude contenttypes --indent 2 > initial_data.json
+.PHONY: dump_incremntale
+dump_incremntale:
+	uv run manage.py dump_incremntale
+
+.PHONY: loaddata_incr
+loaddata_incr:
+ifndef FILE_NAME
+	$(error Devi specificare il nome del file. Esempio: make loaddata_incr FILE_NAME=incremental_dump_2025-08-18_171306.json)
+endif
+	uv run manage.py loaddata $(FILE_NAME)
 
 .PHONY: loaddata
 loaddata:

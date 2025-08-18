@@ -31,7 +31,7 @@ THIRD_PARTY_APPS = [
     "cities_light",
 ]
 
-APPS = ["users", "pareri", "datoriLavoro"]
+APPS = ["users", "pareri", "datoriLavoro", "core"]
 
 # Impostazioni di django-cities-light
 CITIES_LIGHT_TRANSLATION_LANGUAGES = ["it"]
