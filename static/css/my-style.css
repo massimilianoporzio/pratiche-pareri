@@ -1,4 +1,4 @@
-/*! tailwindcss v4.1.11 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.1.12 | MIT License | https://tailwindcss.com */
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -964,6 +964,64 @@
 }
 .content-wrapper {
   background-color: #f4f4f4;
+}
+.related-widget-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.inline-related table thead th,
+.inline-related table tbody td {
+  vertical-align: middle;
+}
+.inline-related table tbody td img {
+  vertical-align: middle;
+}
+.form-row .field-is_sede_legale,
+.form-row .field-DELETE {
+  text-align: center;
+}
+*
+  Centra
+  le
+  celle
+  delle
+  checkbox
+  nel
+  formset
+  inline
+  */
+  .inline-related
+  table
+  th.column-is_sede_legale,
+.inline-related table th.column-sede_legale,
+.inline-related table td.field-is_sede_legale,
+.inline-related table th.column-delete,
+.inline-related table td.delete {
+  text-align: center;
+  vertical-align: middle;
+}
+.inline-related table th.column-is_sede_legale,
+.inline-related table th.column-delete {
+  text-align: center;
+  vertical-align: middle;
+}
+.inline-related table td.field-is_sede_legale,
+.inline-related table td.delete {
+  text-align: center;
+  vertical-align: middle;
+}
+.nav-tabs .nav-item .nav-link:not(.active):hover {
+  background-color: var(--colore-principale);
+  color: white !important;
+}
+.nav-tabs .nav-item .nav-link.active {
+  background-color: var(--colore-principale);
+  color: white !important;
+}
+#datorelavorosede_set-group > div > fieldset > ul > li {
+  color: red;
+  font-weight: bold;
 }
 @property --tw-rotate-x {
   syntax: "*";

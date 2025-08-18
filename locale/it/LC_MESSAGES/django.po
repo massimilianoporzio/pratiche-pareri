@@ -1,14 +1,149 @@
-#: .\pratiche\admin.py:94
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-18 16:04+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: .\datoriLavoro\forms.py:16
+msgid "Devi associare almeno una sede a questo datore di lavoro."
+msgstr ""
+
+#: .\datoriLavoro\forms.py:30
+msgid ""
+"Devi compilare almeno uno dei seguenti campi: Ragione Sociale, Partita IVA/"
+"Codice Fiscale o Codice Fiscale."
+msgstr ""
+
+#: .\datoriLavoro\models.py:52
+msgid "Città"
+msgstr ""
+
+#: .\datoriLavoro\models.py:73
+#, python-format
+msgid "%(value)s non è una Partita IVA italiana valida."
+msgstr ""
+
+#: .\datoriLavoro\models.py:81
+#, python-format
+msgid "%(value)s non è un Codice Fiscale valido."
+msgstr ""
+
+#: .\datoriLavoro\models.py:89
+msgid "Ragione Sociale"
+msgstr ""
+
+#: .\datoriLavoro\models.py:94
+msgid "Partita IVA"
+msgstr ""
+
+#: .\datoriLavoro\models.py:100
+msgid "Codice Fiscale"
+msgstr ""
+
+#: .\datoriLavoro\models.py:109
+msgid "Sedi"
+msgstr ""
+
+#: .\datoriLavoro\models.py:131
+msgid "Sede Legale?"
+msgstr ""
+
+#: .\pareri\models.py:74
+msgid "Esperto di Radioprotezione"
+msgstr ""
+
+#: .\pareri\models.py:75
+msgid "Esperti di Radioprotezione"
+msgstr ""
+
+#: .\templates\admin\base.html:117 .\templates\admin\base.html:118
+msgid "Search"
+msgstr "Ricerca"
+
+#: .\templates\admin\base.html:186
+msgid "Account"
+msgstr ""
+
+#: .\templates\admin\base.html:189
+msgid "Change password"
+msgstr "Cambia password"
+
+#: .\templates\admin\base.html:195
+msgid "Log out"
+msgstr "Logout"
+
+#: .\templates\admin\base.html:210
+msgid "See Profile"
+msgstr "Vedi il Profilo"
+
+#: .\templates\admin\base.html:259
+msgid "Dashboard"
+msgstr ""
+
+#: .\templates\admin\base.html:373
+msgid "Jazzmin version"
+msgstr ""
+
+#: .\templates\admin\base.html:376
+msgid "Copyright"
+msgstr ""
+
+#: .\templates\admin\base.html:376
+msgid "All rights reserved."
+msgstr "Tutti i diritti riservati"
+
+#: .\templates\admin\base.html:390
+msgid "UI Configuration"
+msgstr ""
+
+#: .\templates\admin\base.html:394
+msgid "Copy this info your settings file to persist these UI changes"
+msgstr ""
+
+#: .\templates\admin\base.html:400
+msgid "Close"
+msgstr "Chiudi"
+
+#: .\templates\admin\login.html:61
+msgid "Forgotten your password or username?"
+msgstr "Dimenticato la password o il nome utente?"
+
+#: .\templates\admin\login.html:68
+msgid "Log in"
+msgstr "Login"
+
+#: .\templates\registration\logged_out.html:5
+msgid "Grazie per aver usato Pratiche & Pareri."
+msgstr ""
+
+#: .\templates\registration\logged_out.html:7
+msgid "Log in again"
+msgstr "riesegui il login"
+
+#: .\users\admin.py:46
 msgid "Personal info"
-msgstr ""
+msgstr "Informazioni Personali"
 
-#: .\pratiche\admin.py:98
+#: .\users\admin.py:50
 msgid "Permissions"
-msgstr ""
+msgstr "permessi"
 
-#: .\pratiche\admin.py:109
+#: .\users\admin.py:61
 msgid "Important dates"
-msgstr ""
+msgstr "Date importanti"
 
 #: .\users\apps.py:8
 msgid "Utenti"
@@ -30,15 +165,19 @@ msgstr ""
 msgid "indirizzo email aziendale"
 msgstr ""
 
-#: .\users\models.py:57
+#: .\users\models.py:48
+msgid "nome utente"
+msgstr ""
+
+#: .\users\models.py:59
 msgid "genere"
 msgstr ""
 
-#: .\users\models.py:81 .\utils\model.py:16
+#: .\users\models.py:83 .\utils\model.py:16
 msgid "created at"
 msgstr ""
 
-#: .\users\models.py:84 .\utils\model.py:17
+#: .\users\models.py:86 .\utils\model.py:17
 msgid "updated at"
 msgstr ""
 
@@ -46,8 +185,6 @@ msgstr ""
 msgid "id"
 msgstr ""
 
-msgid "Log out"
-msgstr "Logout"
-
-msgid "See Profile"
-msgstr "Vedi il profilo"
+#: .\utils\model.py:35
+msgid "ancora attivo"
+msgstr ""

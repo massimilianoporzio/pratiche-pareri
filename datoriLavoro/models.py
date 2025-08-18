@@ -1,8 +1,10 @@
+# -*- coding: utf-8 -*-
 import logging
 
 import codicefiscale as cf
 from cities_light.models import City, Country, Region
 from django.db import models
+from django.db.models import Q, UniqueConstraint
 from django.forms import ValidationError
 from django.utils.translation import gettext_lazy as _
 from verify_vat_number.vies import get_from_eu_vies
@@ -51,7 +53,7 @@ class Sede(MyModel):
     )
 
     def __str__(self):
-        result = self.nome if self.nome else ""
+        result = self.nome if self.nome else "Anonima"
         return result + " - " + str(self.citta)
 
     class Meta:
@@ -99,9 +101,11 @@ class DatoreLavoro(MyModel):
         blank=True,
         validators=[validate_codice_fiscale],
     )
-    # Aggiungi qui la ManyToManyField
+    # La relazione M2M passa per il modello intermedio
     sedi = models.ManyToManyField(
-        "Sede",
+        Sede,
+        through="DatoreLavoroSede",
+        related_name="datori_lavoro",
         verbose_name=_("Sedi"),
     )
 
@@ -117,3 +121,42 @@ class DatoreLavoro(MyModel):
         if self.codice_fiscale:
             self.codice_fiscale = self.codice_fiscale.upper()
         super().save(*args, **kwargs)
+
+
+class DatoreLavoroSede(models.Model):
+    datore_lavoro = models.ForeignKey(
+        DatoreLavoro, on_delete=models.CASCADE, blank=True, null=True
+    )
+    sede = models.ForeignKey(Sede, on_delete=models.CASCADE)
+    is_sede_legale = models.BooleanField(default=False, verbose_name=_("Sede Legale?"))
+
+    class Meta:
+        # Vincolo per garantire che una Sede possa essere "sede legale"
+        # solo per un Datore di Lavoro.
+        constraints = [
+            UniqueConstraint(
+                fields=["sede", "is_sede_legale"],
+                name="unique_legal_office_for_each_sede",
+                condition=Q(is_sede_legale=True),
+            )
+        ]
+        unique_together = (
+            "datore_lavoro",
+            "sede",
+        )  # vincolo per dire che la stessa sede non può essere associata due volte allo stesso datore di lavoro
+        verbose_name = "Sede associata"
+        verbose_name_plural = "Sedi asscociate"
+
+    def clean(self):
+        # Impedisce di impostare is_sede_legale a True se la sede
+        # è già sede legale per un altro datore di lavoro.
+        if self.is_sede_legale:
+            qs = DatoreLavoroSede.objects.filter(sede=self.sede, is_sede_legale=True)
+            # Se stiamo modificando un'associazione esistente, escludiamola.
+            if self.pk:
+                qs = qs.exclude(pk=self.pk)
+
+            if qs.exists():
+                raise ValidationError(
+                    "Questa sede è già impostata come sede legale per un altro datore di lavoro."
+                )
