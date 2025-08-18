@@ -2,8 +2,6 @@
 from django import forms
 from django.contrib import admin, messages
 from django.core.exceptions import ValidationError
-from django.shortcuts import redirect
-from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
 
 from pratiche.admin import ActiveModelAdminMixin, custom_admin_site
@@ -174,63 +172,17 @@ class SedeAdmin(admin.ModelAdmin):
     fields = ("nome", "indirizzo", "citta")
 
     def response_add(self, request, obj, post_url_continue=None):
-        """
-        Personalizza il messaggio di successo dopo l'aggiunta.
-        """
-        # Creazione del messaggio personalizzato
         msg = _("La %(name)s '%(obj)s' è stata creata con successo.") % {
             "name": self.opts.verbose_name,
             "obj": obj,
         }
         self.message_user(request, msg, level=messages.SUCCESS)
-
-        # Gestisci il reindirizzamento manualmente per non chiamare super().response_add
-        if "_continue" in request.POST:
-            url = reverse(
-                "admin:%s_%s_change" % (self.opts.app_label, self.opts.model_name),
-                args=(obj.pk,),
-            )
-            return redirect(url)
-
-        if "_addanother" in request.POST:
-            url = reverse(
-                "admin:%s_%s_add" % (self.opts.app_label, self.opts.model_name)
-            )
-            return redirect(url)
-
-        return redirect(
-            reverse(
-                "admin:%s_%s_changelist" % (self.opts.app_label, self.opts.model_name)
-            )
-        )
+        return super().response_add(request, obj, post_url_continue)
 
     def response_change(self, request, obj):
-        """
-        Personalizza il messaggio di successo dopo la modifica.
-        """
-        # Creazione del messaggio personalizzato
         msg = _("La %(name)s '%(obj)s' è stata modificata con successo.") % {
             "name": self.opts.verbose_name,
             "obj": obj,
         }
         self.message_user(request, msg, level=messages.SUCCESS)
-
-        # Gestisci il reindirizzamento manualmente per non chiamare super().response_change
-        if "_continue" in request.POST:
-            url = reverse(
-                "admin:%s_%s_change" % (self.opts.app_label, self.opts.model_name),
-                args=(obj.pk,),
-            )
-            return redirect(url)
-
-        if "_addanother" in request.POST:
-            url = reverse(
-                "admin:%s_%s_add" % (self.opts.app_label, self.opts.model_name)
-            )
-            return redirect(url)
-
-        return redirect(
-            reverse(
-                "admin:%s_%s_changelist" % (self.opts.app_label, self.opts.model_name)
-            )
-        )
+        return super().response_change(request, obj)
