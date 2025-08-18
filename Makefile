@@ -14,6 +14,10 @@ migrations:
 run-server: rundb-if-needed
 	uv run manage.py runserver
 
+.PHONY: run-server-stage
+run-server-stage:
+	uv run manage.stage.py runserver
+
 .PHONY: superuser
 superuser:
 	uv run manage.py createsuperuser
