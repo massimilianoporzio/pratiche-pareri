@@ -260,3 +260,5 @@ LOGGING = {
         "handlers": ["console"],
     },
 }
+
+LOGIN_REDIRECT_URL = "/admin/"
