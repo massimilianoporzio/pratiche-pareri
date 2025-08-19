@@ -1,0 +1,23 @@
+[
+{
+  "model": "datoriLavoro.sede",
+  "pk": "1d3a7abc-601f-4c14-9e18-914824811f5c",
+  "fields": {
+    "created_at": "2025-08-19T15:16:46.978Z",
+    "updated_at": "2025-08-19T15:16:46.978Z",
+    "created_by": null,
+    "created_by_fullname": "",
+    "updated_by": [
+      "massimiliano.porzio@aslcn1.it"
+    ],
+    "updated_by_fullname": "massimiliano.porzio",
+    "version": 1755615660297781,
+    "is_active": true,
+    "nome": "---sele legale di massi",
+    "indirizzo": null,
+    "citta": [
+      3177700
+    ]
+  }
+}
+]

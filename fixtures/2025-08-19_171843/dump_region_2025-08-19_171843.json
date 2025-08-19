@@ -1,0 +1,322 @@
+[
+{
+  "model": "cities_light.region",
+  "pk": 20,
+  "fields": {
+    "name": "Abruzzo",
+    "name_ascii": "Abruzzo",
+    "slug": "abruzzo",
+    "geoname_id": 3183560,
+    "alternate_names": "Abruzzi;Regione Abruzzo",
+    "display_name": "Abruzzo, Italia",
+    "geoname_code": "01",
+    "country": [
+      3175395
+    ]
+  }
+},
+{
+  "model": "cities_light.region",
+  "pk": 19,
+  "fields": {
+    "name": "Basilicata",
+    "name_ascii": "Basilicate",
+    "slug": "basilicate",
+    "geoname_id": 3182306,
+    "alternate_names": "",
+    "display_name": "Basilicata, Italia",
+    "geoname_code": "02",
+    "country": [
+      3175395
+    ]
+  }
+},
+{
+  "model": "cities_light.region",
+  "pk": 3,
+  "fields": {
+    "name": "Calabria",
+    "name_ascii": "Calabria",
+    "slug": "calabria",
+    "geoname_id": 2525468,
+    "alternate_names": "",
+    "display_name": "Calabria, Italia",
+    "geoname_code": "03",
+    "country": [
+      3175395
+    ]
+  }
+},
+{
+  "model": "cities_light.region",
+  "pk": 18,
+  "fields": {
+    "name": "Campania",
+    "name_ascii": "Campania",
+    "slug": "campania",
+    "geoname_id": 3181042,
+    "alternate_names": "",
+    "display_name": "Campania, Italia",
+    "geoname_code": "04",
+    "country": [
+      3175395
+    ]
+  }
+},
+{
+  "model": "cities_light.region",
+  "pk": 17,
+  "fields": {
+    "name": "Emilia-Romagna",
+    "name_ascii": "Emilia-Romagna",
+    "slug": "emilia-romagna",
+    "geoname_id": 3177401,
+    "alternate_names": "Regione Emilia-Romagna",
+    "display_name": "Emilia-Romagna, Italia",
+    "geoname_code": "05",
+    "country": [
+      3175395
+    ]
+  }
+},
+{
+  "model": "cities_light.region",
+  "pk": 16,
+  "fields": {
+    "name": "Friuli Venezia Giulia",
+    "name_ascii": "Friuli Venezia Giulia",
+    "slug": "friuli-venezia-giulia",
+    "geoname_id": 3176525,
+    "alternate_names": "",
+    "display_name": "Friuli Venezia Giulia, Italia",
+    "geoname_code": "06",
+    "country": [
+      3175395
+    ]
+  }
+},
+{
+  "model": "cities_light.region",
+  "pk": 15,
+  "fields": {
+    "name": "Lazio",
+    "name_ascii": "Lazio",
+    "slug": "lazio",
+    "geoname_id": 3174976,
+    "alternate_names": "Regione Lazio",
+    "display_name": "Lazio, Italia",
+    "geoname_code": "07",
+    "country": [
+      3175395
+    ]
+  }
+},
+{
+  "model": "cities_light.region",
+  "pk": 12,
+  "fields": {
+    "name": "Le Marche",
+    "name_ascii": "The Marches",
+    "slug": "the-marches",
+    "geoname_id": 3174004,
+    "alternate_names": "",
+    "display_name": "Le Marche, Italia",
+    "geoname_code": "10",
+    "country": [
+      3175395
+    ]
+  }
+},
+{
+  "model": "cities_light.region",
+  "pk": 14,
+  "fields": {
+    "name": "Liguria",
+    "name_ascii": "Liguria",
+    "slug": "liguria",
+    "geoname_id": 3174725,
+    "alternate_names": "",
+    "display_name": "Liguria, Italia",
+    "geoname_code": "08",
+    "country": [
+      3175395
+    ]
+  }
+},
+{
+  "model": "cities_light.region",
+  "pk": 13,
+  "fields": {
+    "name": "Lombardia",
+    "name_ascii": "Lombardy",
+    "slug": "lombardy",
+    "geoname_id": 3174618,
+    "alternate_names": "",
+    "display_name": "Lombardia, Italia",
+    "geoname_code": "09",
+    "country": [
+      3175395
+    ]
+  }
+},
+{
+  "model": "cities_light.region",
+  "pk": 11,
+  "fields": {
+    "name": "Molise",
+    "name_ascii": "Molise",
+    "slug": "molise",
+    "geoname_id": 3173222,
+    "alternate_names": "Regione Molise",
+    "display_name": "Molise, Italia",
+    "geoname_code": "11",
+    "country": [
+      3175395
+    ]
+  }
+},
+{
+  "model": "cities_light.region",
+  "pk": 10,
+  "fields": {
+    "name": "Piemonte",
+    "name_ascii": "Piedmont",
+    "slug": "piedmont",
+    "geoname_id": 3170831,
+    "alternate_names": "Piemont;Piemonte;Regione Piemonte",
+    "display_name": "Piemonte, Italia",
+    "geoname_code": "12",
+    "country": [
+      3175395
+    ]
+  }
+},
+{
+  "model": "cities_light.region",
+  "pk": 9,
+  "fields": {
+    "name": "Puglia",
+    "name_ascii": "Apulia",
+    "slug": "apulia",
+    "geoname_id": 3169778,
+    "alternate_names": "Puglia",
+    "display_name": "Puglia, Italia",
+    "geoname_code": "13",
+    "country": [
+      3175395
+    ]
+  }
+},
+{
+  "model": "cities_light.region",
+  "pk": 2,
+  "fields": {
+    "name": "Sardegna",
+    "name_ascii": "Sardinia",
+    "slug": "sardinia",
+    "geoname_id": 2523228,
+    "alternate_names": "Sardegna",
+    "display_name": "Sardegna, Italia",
+    "geoname_code": "14",
+    "country": [
+      3175395
+    ]
+  }
+},
+{
+  "model": "cities_light.region",
+  "pk": 1,
+  "fields": {
+    "name": "Sicilia",
+    "name_ascii": "Sicily",
+    "slug": "sicily",
+    "geoname_id": 2523119,
+    "alternate_names": "Regione Siciliana;Sicilia",
+    "display_name": "Sicilia, Italia",
+    "geoname_code": "15",
+    "country": [
+      3175395
+    ]
+  }
+},
+{
+  "model": "cities_light.region",
+  "pk": 8,
+  "fields": {
+    "name": "Toscana",
+    "name_ascii": "Tuscany",
+    "slug": "tuscany",
+    "geoname_id": 3165361,
+    "alternate_names": "",
+    "display_name": "Toscana, Italia",
+    "geoname_code": "16",
+    "country": [
+      3175395
+    ]
+  }
+},
+{
+  "model": "cities_light.region",
+  "pk": 7,
+  "fields": {
+    "name": "Trentino-Alto Adige",
+    "name_ascii": "Trentino-Alto Adige",
+    "slug": "trentino-alto-adige",
+    "geoname_id": 3165244,
+    "alternate_names": "Regione Autonoma Trentino-Alto Adige;Sudtirol;Trentin",
+    "display_name": "Trentino-Alto Adige, Italia",
+    "geoname_code": "17",
+    "country": [
+      3175395
+    ]
+  }
+},
+{
+  "model": "cities_light.region",
+  "pk": 6,
+  "fields": {
+    "name": "Umbria",
+    "name_ascii": "Umbria",
+    "slug": "umbria",
+    "geoname_id": 3165048,
+    "alternate_names": "",
+    "display_name": "Umbria, Italia",
+    "geoname_code": "18",
+    "country": [
+      3175395
+    ]
+  }
+},
+{
+  "model": "cities_light.region",
+  "pk": 5,
+  "fields": {
+    "name": "Valle d'Aosta",
+    "name_ascii": "Aosta Valley",
+    "slug": "aosta-valley",
+    "geoname_id": 3164857,
+    "alternate_names": "Regione Autonoma Valle d'Aosta;Vallée d'Aoste",
+    "display_name": "Valle d'Aosta, Italia",
+    "geoname_code": "19",
+    "country": [
+      3175395
+    ]
+  }
+},
+{
+  "model": "cities_light.region",
+  "pk": 4,
+  "fields": {
+    "name": "Veneto",
+    "name_ascii": "Veneto",
+    "slug": "veneto",
+    "geoname_id": 3164604,
+    "alternate_names": "",
+    "display_name": "Veneto, Italia",
+    "geoname_code": "20",
+    "country": [
+      3175395
+    ]
+  }
+}
+]

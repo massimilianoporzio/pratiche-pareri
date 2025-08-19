@@ -67,6 +67,7 @@ class DatoreLavoroSedeInlineForm(forms.ModelForm):
 
 
 class DatoreLavoroSedeInline(admin.TabularInline):
+    form = DatoreLavoroSedeInlineForm
     model = DatoreLavoroSede
     formset = DatoreLavoroSedeInlineFormset
 

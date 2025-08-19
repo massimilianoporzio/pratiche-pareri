@@ -1,0 +1,23 @@
+[
+{
+  "model": "datoriLavoro.datorelavoro",
+  "pk": "ae3b8f2b-5edf-4d70-b904-dea32f2ada15",
+  "fields": {
+    "created_at": "2025-08-19T15:16:50.376Z",
+    "updated_at": "2025-08-19T15:17:04.861Z",
+    "created_by": [
+      "massimiliano.porzio@aslcn1.it"
+    ],
+    "created_by_fullname": "massimiliano.porzio",
+    "updated_by": [
+      "massimiliano.porzio@aslcn1.it"
+    ],
+    "updated_by_fullname": "massimiliano.porzio",
+    "version": 1755615678180458,
+    "is_active": true,
+    "ragione_sociale": "MASSI",
+    "p_iva": "",
+    "codice_fiscale": ""
+  }
+}
+]

@@ -1,0 +1,2035 @@
+[
+{
+  "model": "cities_light.subregion",
+  "pk": 14,
+  "fields": {
+    "name": "Agrigento",
+    "name_ascii": "Agrigento",
+    "slug": "agrigento",
+    "geoname_id": 2525763,
+    "alternate_names": "Libero Consorzio Comunale di Agrigento;Provincia di Agrigento",
+    "display_name": "Agrigento, Italy",
+    "geoname_code": "AG",
+    "country": [
+      3175395
+    ],
+    "region": [
+      2523119
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 89,
+  "fields": {
+    "name": "Bari",
+    "name_ascii": "Bari",
+    "slug": "bari",
+    "geoname_id": 3182350,
+    "alternate_names": "Città Metropolitana di Bari",
+    "display_name": "Bari, Italy",
+    "geoname_code": "BA",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3169778
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 85,
+  "fields": {
+    "name": "Bologna",
+    "name_ascii": "Bologna",
+    "slug": "bologna",
+    "geoname_id": 3181927,
+    "alternate_names": "Città Metropolitana di Bologna",
+    "display_name": "Bologna, Italy",
+    "geoname_code": "BO",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3177401
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 84,
+  "fields": {
+    "name": "Bolzano",
+    "name_ascii": "Bolzano",
+    "slug": "bolzano",
+    "geoname_id": 3181912,
+    "alternate_names": "Alto Adige;Provincia Autonoma di Bolzano;Provincia di Bolzano",
+    "display_name": "Bolzano, Italy",
+    "geoname_code": "BZ",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3165244
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 11,
+  "fields": {
+    "name": "Catania",
+    "name_ascii": "Catania",
+    "slug": "catania",
+    "geoname_id": 2525065,
+    "alternate_names": "Città Metropolitana di Catania;Provincia di Catania",
+    "display_name": "Catania, Italy",
+    "geoname_code": "CT",
+    "country": [
+      3175395
+    ],
+    "region": [
+      2523119
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 55,
+  "fields": {
+    "name": "Città metropolitana di Milano",
+    "name_ascii": "Citta metropolitana di Milano",
+    "slug": "citta-metropolitana-di-milano",
+    "geoname_id": 3173434,
+    "alternate_names": "",
+    "display_name": "Città metropolitana di Milano, Italy",
+    "geoname_code": "MI",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3174618
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 36,
+  "fields": {
+    "name": "Città metropolitana di Roma Capitale",
+    "name_ascii": "Citta metropolitana di Roma Capitale",
+    "slug": "citta-metropolitana-di-roma-capitale",
+    "geoname_id": 3169069,
+    "alternate_names": "Roma",
+    "display_name": "Città metropolitana di Roma Capitale, Italy",
+    "geoname_code": "RM",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3174976
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 8,
+  "fields": {
+    "name": "Enna",
+    "name_ascii": "Enna",
+    "slug": "enna",
+    "geoname_id": 2524818,
+    "alternate_names": "Libero Consorzio Comunale di Enna;Provincia di Enna",
+    "display_name": "Enna, Italy",
+    "geoname_code": "EN",
+    "country": [
+      3175395
+    ],
+    "region": [
+      2523119
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 69,
+  "fields": {
+    "name": "Gorizia",
+    "name_ascii": "Gorizia",
+    "slug": "gorizia",
+    "geoname_id": 3175985,
+    "alternate_names": "Ente di Decentramento Regionale di Gorizia;Provincia di Gorizia",
+    "display_name": "Gorizia, Italy",
+    "geoname_code": "GO",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3176525
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 7,
+  "fields": {
+    "name": "Messina",
+    "name_ascii": "Messina",
+    "slug": "messina",
+    "geoname_id": 2524169,
+    "alternate_names": "Città Metropolitana di Messina",
+    "display_name": "Messina, Italy",
+    "geoname_code": "ME",
+    "country": [
+      3175395
+    ],
+    "region": [
+      2523119
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 53,
+  "fields": {
+    "name": "Napoli",
+    "name_ascii": "Napoli",
+    "slug": "napoli",
+    "geoname_id": 3172391,
+    "alternate_names": "Città Metropolitana di Napoli;Provincia di Napoli",
+    "display_name": "Napoli, Italy",
+    "geoname_code": "NA",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3181042
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 5,
+  "fields": {
+    "name": "Palermo",
+    "name_ascii": "Palermo",
+    "slug": "palermo",
+    "geoname_id": 2523918,
+    "alternate_names": "Città Metropolitana di Palermo;Provincia di Palermo",
+    "display_name": "Palermo, Italy",
+    "geoname_code": "PA",
+    "country": [
+      3175395
+    ],
+    "region": [
+      2523119
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 41,
+  "fields": {
+    "name": "Pordenone",
+    "name_ascii": "Pordenone",
+    "slug": "pordenone",
+    "geoname_id": 3170146,
+    "alternate_names": "Ente di Decentramento Regionale di Pordenone;Provincia di Pordenone",
+    "display_name": "Pordenone, Italy",
+    "geoname_code": "PN",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3176525
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 93,
+  "fields": {
+    "name": "Province of Arezzo",
+    "name_ascii": "Province of Arezzo",
+    "slug": "province-of-arezzo",
+    "geoname_id": 3182882,
+    "alternate_names": "Provincia di Arezzo",
+    "display_name": "Province of Arezzo, Italy",
+    "geoname_code": "AR",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3165361
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 104,
+  "fields": {
+    "name": "Province of Fermo",
+    "name_ascii": "Province of Fermo",
+    "slug": "province-of-fermo",
+    "geoname_id": 6955471,
+    "alternate_names": "Provincia di Fermo",
+    "display_name": "Province of Fermo, Italy",
+    "geoname_code": "FM",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3174004
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 74,
+  "fields": {
+    "name": "Province of Florence",
+    "name_ascii": "Province of Florence",
+    "slug": "province-of-florence",
+    "geoname_id": 3176958,
+    "alternate_names": "Provincia di Firenze",
+    "display_name": "Province of Florence, Italy",
+    "geoname_code": "FI",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3165361
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 43,
+  "fields": {
+    "name": "Province of Pisa",
+    "name_ascii": "Province of Pisa",
+    "slug": "province-of-pisa",
+    "geoname_id": 3170646,
+    "alternate_names": "Provincia di Pisa",
+    "display_name": "Province of Pisa, Italy",
+    "geoname_code": "PI",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3165361
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 25,
+  "fields": {
+    "name": "Provincia autonoma di Trento",
+    "name_ascii": "Provincia autonoma di Trento",
+    "slug": "provincia-autonoma-di-trento",
+    "geoname_id": 3165241,
+    "alternate_names": "Provincia di Trento",
+    "display_name": "Provincia autonoma di Trento, Italy",
+    "geoname_code": "TN",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3165244
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 107,
+  "fields": {
+    "name": "Provincia del Sud Sardegna",
+    "name_ascii": "Provincia del Sud Sardegna",
+    "slug": "provincia-del-sud-sardegna",
+    "geoname_id": 11550038,
+    "alternate_names": "",
+    "display_name": "Provincia del Sud Sardegna, Italy",
+    "geoname_code": "SU",
+    "country": [
+      3175395
+    ],
+    "region": [
+      2523228
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 65,
+  "fields": {
+    "name": "Provincia dell' Aquila",
+    "name_ascii": "Provincia dell' Aquila",
+    "slug": "provincia-dell-aquila",
+    "geoname_id": 3175120,
+    "alternate_names": "Provincia dell’Aquila",
+    "display_name": "Provincia dell' Aquila, Italy",
+    "geoname_code": "AQ",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3183560
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 96,
+  "fields": {
+    "name": "Provincia di Alessandria",
+    "name_ascii": "Provincia di Alessandria",
+    "slug": "provincia-di-alessandria",
+    "geoname_id": 3183298,
+    "alternate_names": "",
+    "display_name": "Provincia di Alessandria, Italy",
+    "geoname_code": "AL",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3170831
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 95,
+  "fields": {
+    "name": "Provincia di Ancona",
+    "name_ascii": "Provincia di Ancona",
+    "slug": "provincia-di-ancona",
+    "geoname_id": 3183087,
+    "alternate_names": "Ancona",
+    "display_name": "Provincia di Ancona, Italy",
+    "geoname_code": "AN",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3174004
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 92,
+  "fields": {
+    "name": "Provincia di Ascoli Piceno",
+    "name_ascii": "Provincia di Ascoli Piceno",
+    "slug": "provincia-di-ascoli-piceno",
+    "geoname_id": 3182748,
+    "alternate_names": "",
+    "display_name": "Provincia di Ascoli Piceno, Italy",
+    "geoname_code": "AP",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3174004
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 91,
+  "fields": {
+    "name": "Provincia di Asti",
+    "name_ascii": "Provincia di Asti",
+    "slug": "provincia-di-asti",
+    "geoname_id": 3182712,
+    "alternate_names": "",
+    "display_name": "Provincia di Asti, Italy",
+    "geoname_code": "AT",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3170831
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 90,
+  "fields": {
+    "name": "Provincia di Avellino",
+    "name_ascii": "Provincia di Avellino",
+    "slug": "provincia-di-avellino",
+    "geoname_id": 3182649,
+    "alternate_names": "",
+    "display_name": "Provincia di Avellino, Italy",
+    "geoname_code": "AV",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3181042
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 105,
+  "fields": {
+    "name": "Provincia di Barletta - Andria - Trani",
+    "name_ascii": "Provincia di Barletta - Andria - Trani",
+    "slug": "provincia-di-barletta-andria-trani",
+    "geoname_id": 6955699,
+    "alternate_names": "Barletta-Andria-Trani",
+    "display_name": "Provincia di Barletta - Andria - Trani, Italy",
+    "geoname_code": "BT",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3169778
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 88,
+  "fields": {
+    "name": "Provincia di Belluno",
+    "name_ascii": "Provincia di Belluno",
+    "slug": "provincia-di-belluno",
+    "geoname_id": 3182209,
+    "alternate_names": "",
+    "display_name": "Provincia di Belluno, Italy",
+    "geoname_code": "BL",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3164604
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 87,
+  "fields": {
+    "name": "Provincia di Benevento",
+    "name_ascii": "Provincia di Benevento",
+    "slug": "provincia-di-benevento",
+    "geoname_id": 3182178,
+    "alternate_names": "",
+    "display_name": "Provincia di Benevento, Italy",
+    "geoname_code": "BN",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3181042
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 86,
+  "fields": {
+    "name": "Provincia di Bergamo",
+    "name_ascii": "Provincia di Bergamo",
+    "slug": "provincia-di-bergamo",
+    "geoname_id": 3182163,
+    "alternate_names": "",
+    "display_name": "Provincia di Bergamo, Italy",
+    "geoname_code": "BG",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3174618
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 97,
+  "fields": {
+    "name": "Provincia di Biella",
+    "name_ascii": "Provincia di Biella",
+    "slug": "provincia-di-biella",
+    "geoname_id": 6457397,
+    "alternate_names": "",
+    "display_name": "Provincia di Biella, Italy",
+    "geoname_code": "BI",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3170831
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 83,
+  "fields": {
+    "name": "Provincia di Brescia",
+    "name_ascii": "Provincia di Brescia",
+    "slug": "provincia-di-brescia",
+    "geoname_id": 3181553,
+    "alternate_names": "",
+    "display_name": "Provincia di Brescia, Italy",
+    "geoname_code": "BS",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3174618
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 82,
+  "fields": {
+    "name": "Provincia di Brindisi",
+    "name_ascii": "Provincia di Brindisi",
+    "slug": "provincia-di-brindisi",
+    "geoname_id": 3181526,
+    "alternate_names": "",
+    "display_name": "Provincia di Brindisi, Italy",
+    "geoname_code": "BR",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3169778
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 13,
+  "fields": {
+    "name": "Provincia di Cagliari",
+    "name_ascii": "Provincia di Cagliari",
+    "slug": "provincia-di-cagliari",
+    "geoname_id": 2525471,
+    "alternate_names": "Cagliari",
+    "display_name": "Provincia di Cagliari, Italy",
+    "geoname_code": "CA",
+    "country": [
+      3175395
+    ],
+    "region": [
+      2523228
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 12,
+  "fields": {
+    "name": "Provincia di Caltanissetta",
+    "name_ascii": "Provincia di Caltanissetta",
+    "slug": "provincia-di-caltanissetta",
+    "geoname_id": 2525447,
+    "alternate_names": "",
+    "display_name": "Provincia di Caltanissetta, Italy",
+    "geoname_code": "CL",
+    "country": [
+      3175395
+    ],
+    "region": [
+      2523119
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 81,
+  "fields": {
+    "name": "Provincia di Campobasso",
+    "name_ascii": "Provincia di Campobasso",
+    "slug": "provincia-di-campobasso",
+    "geoname_id": 3180990,
+    "alternate_names": "",
+    "display_name": "Provincia di Campobasso, Italy",
+    "geoname_code": "CB",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3173222
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 80,
+  "fields": {
+    "name": "Provincia di Caserta",
+    "name_ascii": "Provincia di Caserta",
+    "slug": "provincia-di-caserta",
+    "geoname_id": 3179865,
+    "alternate_names": "",
+    "display_name": "Provincia di Caserta, Italy",
+    "geoname_code": "CE",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3181042
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 10,
+  "fields": {
+    "name": "Provincia di Catanzaro",
+    "name_ascii": "Provincia di Catanzaro",
+    "slug": "provincia-di-catanzaro",
+    "geoname_id": 2525058,
+    "alternate_names": "",
+    "display_name": "Provincia di Catanzaro, Italy",
+    "geoname_code": "CZ",
+    "country": [
+      3175395
+    ],
+    "region": [
+      2525468
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 79,
+  "fields": {
+    "name": "Provincia di Chieti",
+    "name_ascii": "Provincia di Chieti",
+    "slug": "provincia-di-chieti",
+    "geoname_id": 3178795,
+    "alternate_names": "",
+    "display_name": "Provincia di Chieti, Italy",
+    "geoname_code": "CH",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3183560
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 78,
+  "fields": {
+    "name": "Provincia di Como",
+    "name_ascii": "Provincia di Como",
+    "slug": "provincia-di-como",
+    "geoname_id": 3178227,
+    "alternate_names": "Como",
+    "display_name": "Provincia di Como, Italy",
+    "geoname_code": "CO",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3174618
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 9,
+  "fields": {
+    "name": "Provincia di Cosenza",
+    "name_ascii": "Provincia di Cosenza",
+    "slug": "provincia-di-cosenza",
+    "geoname_id": 2524906,
+    "alternate_names": "",
+    "display_name": "Provincia di Cosenza, Italy",
+    "geoname_code": "CS",
+    "country": [
+      3175395
+    ],
+    "region": [
+      2525468
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 77,
+  "fields": {
+    "name": "Provincia di Cremona",
+    "name_ascii": "Provincia di Cremona",
+    "slug": "provincia-di-cremona",
+    "geoname_id": 3177837,
+    "alternate_names": "",
+    "display_name": "Provincia di Cremona, Italy",
+    "geoname_code": "CR",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3174618
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 100,
+  "fields": {
+    "name": "Provincia di Crotone",
+    "name_ascii": "Provincia di Crotone",
+    "slug": "provincia-di-crotone",
+    "geoname_id": 6458615,
+    "alternate_names": "",
+    "display_name": "Provincia di Crotone, Italy",
+    "geoname_code": "KR",
+    "country": [
+      3175395
+    ],
+    "region": [
+      2525468
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 76,
+  "fields": {
+    "name": "Provincia di Cuneo",
+    "name_ascii": "Provincia di Cuneo",
+    "slug": "provincia-di-cuneo",
+    "geoname_id": 3177699,
+    "alternate_names": "",
+    "display_name": "Provincia di Cuneo, Italy",
+    "geoname_code": "CN",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3170831
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 75,
+  "fields": {
+    "name": "Provincia di Ferrara",
+    "name_ascii": "Provincia di Ferrara",
+    "slug": "provincia-di-ferrara",
+    "geoname_id": 3177088,
+    "alternate_names": "",
+    "display_name": "Provincia di Ferrara, Italy",
+    "geoname_code": "FE",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3177401
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 73,
+  "fields": {
+    "name": "Provincia di Foggia",
+    "name_ascii": "Provincia di Foggia",
+    "slug": "provincia-di-foggia",
+    "geoname_id": 3176884,
+    "alternate_names": "",
+    "display_name": "Provincia di Foggia, Italy",
+    "geoname_code": "FG",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3169778
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 72,
+  "fields": {
+    "name": "Provincia di Forlì-Cesena",
+    "name_ascii": "Provincia di Forli-Cesena",
+    "slug": "provincia-di-forli-cesena",
+    "geoname_id": 3176745,
+    "alternate_names": "Provincia di Cesena",
+    "display_name": "Provincia di Forlì-Cesena, Italy",
+    "geoname_code": "FC",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3177401
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 71,
+  "fields": {
+    "name": "Provincia di Frosinone",
+    "name_ascii": "Provincia di Frosinone",
+    "slug": "provincia-di-frosinone",
+    "geoname_id": 3176513,
+    "alternate_names": "",
+    "display_name": "Provincia di Frosinone, Italy",
+    "geoname_code": "FR",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3174976
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 70,
+  "fields": {
+    "name": "Provincia di Genova",
+    "name_ascii": "Provincia di Genova",
+    "slug": "provincia-di-genova",
+    "geoname_id": 3176217,
+    "alternate_names": "Genova",
+    "display_name": "Provincia di Genova, Italy",
+    "geoname_code": "GE",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3174725
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 68,
+  "fields": {
+    "name": "Provincia di Grosseto",
+    "name_ascii": "Provincia di Grosseto",
+    "slug": "provincia-di-grosseto",
+    "geoname_id": 3175784,
+    "alternate_names": "",
+    "display_name": "Provincia di Grosseto, Italy",
+    "geoname_code": "GR",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3165361
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 67,
+  "fields": {
+    "name": "Provincia di Imperia",
+    "name_ascii": "Provincia di Imperia",
+    "slug": "provincia-di-imperia",
+    "geoname_id": 3175531,
+    "alternate_names": "",
+    "display_name": "Provincia di Imperia, Italy",
+    "geoname_code": "IM",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3174725
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 66,
+  "fields": {
+    "name": "Provincia di Isernia",
+    "name_ascii": "Provincia di Isernia",
+    "slug": "provincia-di-isernia",
+    "geoname_id": 3175444,
+    "alternate_names": "",
+    "display_name": "Provincia di Isernia, Italy",
+    "geoname_code": "IS",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3173222
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 64,
+  "fields": {
+    "name": "Provincia di La Spezia",
+    "name_ascii": "Provincia di La Spezia",
+    "slug": "provincia-di-la-spezia",
+    "geoname_id": 3175080,
+    "alternate_names": "",
+    "display_name": "Provincia di La Spezia, Italy",
+    "geoname_code": "SP",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3174725
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 63,
+  "fields": {
+    "name": "Provincia di Latina",
+    "name_ascii": "Provincia di Latina",
+    "slug": "provincia-di-latina",
+    "geoname_id": 3175057,
+    "alternate_names": "",
+    "display_name": "Provincia di Latina, Italy",
+    "geoname_code": "LT",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3174976
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 62,
+  "fields": {
+    "name": "Provincia di Lecce",
+    "name_ascii": "Provincia di Lecce",
+    "slug": "provincia-di-lecce",
+    "geoname_id": 3174952,
+    "alternate_names": "",
+    "display_name": "Provincia di Lecce, Italy",
+    "geoname_code": "LE",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3169778
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 101,
+  "fields": {
+    "name": "Provincia di Lecco",
+    "name_ascii": "Provincia di Lecco",
+    "slug": "provincia-di-lecco",
+    "geoname_id": 6458616,
+    "alternate_names": "",
+    "display_name": "Provincia di Lecco, Italy",
+    "geoname_code": "LC",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3174618
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 61,
+  "fields": {
+    "name": "Provincia di Livorno",
+    "name_ascii": "Provincia di Livorno",
+    "slug": "provincia-di-livorno",
+    "geoname_id": 3174658,
+    "alternate_names": "Livorno",
+    "display_name": "Provincia di Livorno, Italy",
+    "geoname_code": "LI",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3165361
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 102,
+  "fields": {
+    "name": "Provincia di Lodi",
+    "name_ascii": "Provincia di Lodi",
+    "slug": "provincia-di-lodi",
+    "geoname_id": 6458617,
+    "alternate_names": "",
+    "display_name": "Provincia di Lodi, Italy",
+    "geoname_code": "LO",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3174618
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 60,
+  "fields": {
+    "name": "Provincia di Lucca",
+    "name_ascii": "Provincia di Lucca",
+    "slug": "provincia-di-lucca",
+    "geoname_id": 3174529,
+    "alternate_names": "Lucca",
+    "display_name": "Provincia di Lucca, Italy",
+    "geoname_code": "LU",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3165361
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 59,
+  "fields": {
+    "name": "Provincia di Macerata",
+    "name_ascii": "Provincia di Macerata",
+    "slug": "provincia-di-macerata",
+    "geoname_id": 3174379,
+    "alternate_names": "",
+    "display_name": "Provincia di Macerata, Italy",
+    "geoname_code": "MC",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3174004
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 58,
+  "fields": {
+    "name": "Provincia di Mantova",
+    "name_ascii": "Provincia di Mantova",
+    "slug": "provincia-di-mantova",
+    "geoname_id": 3174050,
+    "alternate_names": "",
+    "display_name": "Provincia di Mantova, Italy",
+    "geoname_code": "MN",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3174618
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 57,
+  "fields": {
+    "name": "Provincia di Massa-Carrara",
+    "name_ascii": "Provincia di Massa-Carrara",
+    "slug": "provincia-di-massa-carrara",
+    "geoname_id": 3173767,
+    "alternate_names": "",
+    "display_name": "Provincia di Massa-Carrara, Italy",
+    "geoname_code": "MS",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3165361
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 56,
+  "fields": {
+    "name": "Provincia di Matera",
+    "name_ascii": "Provincia di Matera",
+    "slug": "provincia-di-matera",
+    "geoname_id": 3173718,
+    "alternate_names": "Matera",
+    "display_name": "Provincia di Matera, Italy",
+    "geoname_code": "MT",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3182306
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 54,
+  "fields": {
+    "name": "Provincia di Modena",
+    "name_ascii": "Provincia di Modena",
+    "slug": "provincia-di-modena",
+    "geoname_id": 3173330,
+    "alternate_names": "",
+    "display_name": "Provincia di Modena, Italy",
+    "geoname_code": "MO",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3177401
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 106,
+  "fields": {
+    "name": "Provincia di Monza e della Brianza",
+    "name_ascii": "Provincia di Monza e della Brianza",
+    "slug": "provincia-di-monza-e-della-brianza",
+    "geoname_id": 6955700,
+    "alternate_names": "Monza e della Brianza;Provincia di Monza;Provincia di Monza e Brianza",
+    "display_name": "Provincia di Monza e della Brianza, Italy",
+    "geoname_code": "MB",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3174618
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 52,
+  "fields": {
+    "name": "Provincia di Novara",
+    "name_ascii": "Provincia di Novara",
+    "slug": "provincia-di-novara",
+    "geoname_id": 3172188,
+    "alternate_names": "",
+    "display_name": "Provincia di Novara, Italy",
+    "geoname_code": "NO",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3170831
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 51,
+  "fields": {
+    "name": "Provincia di Nuoro",
+    "name_ascii": "Provincia di Nuoro",
+    "slug": "provincia-di-nuoro",
+    "geoname_id": 3172153,
+    "alternate_names": "",
+    "display_name": "Provincia di Nuoro, Italy",
+    "geoname_code": "NU",
+    "country": [
+      3175395
+    ],
+    "region": [
+      2523228
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 6,
+  "fields": {
+    "name": "Provincia di Oristano",
+    "name_ascii": "Provincia di Oristano",
+    "slug": "provincia-di-oristano",
+    "geoname_id": 2523962,
+    "alternate_names": "",
+    "display_name": "Provincia di Oristano, Italy",
+    "geoname_code": "OR",
+    "country": [
+      3175395
+    ],
+    "region": [
+      2523228
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 50,
+  "fields": {
+    "name": "Provincia di Padova",
+    "name_ascii": "Provincia di Padova",
+    "slug": "provincia-di-padova",
+    "geoname_id": 3171727,
+    "alternate_names": "",
+    "display_name": "Provincia di Padova, Italy",
+    "geoname_code": "PD",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3164604
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 49,
+  "fields": {
+    "name": "Provincia di Parma",
+    "name_ascii": "Provincia di Parma",
+    "slug": "provincia-di-parma",
+    "geoname_id": 3171456,
+    "alternate_names": "",
+    "display_name": "Provincia di Parma, Italy",
+    "geoname_code": "PR",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3177401
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 48,
+  "fields": {
+    "name": "Provincia di Pavia",
+    "name_ascii": "Provincia di Pavia",
+    "slug": "provincia-di-pavia",
+    "geoname_id": 3171364,
+    "alternate_names": "",
+    "display_name": "Provincia di Pavia, Italy",
+    "geoname_code": "PV",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3174618
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 47,
+  "fields": {
+    "name": "Provincia di Perugia",
+    "name_ascii": "Provincia di Perugia",
+    "slug": "provincia-di-perugia",
+    "geoname_id": 3171179,
+    "alternate_names": "",
+    "display_name": "Provincia di Perugia, Italy",
+    "geoname_code": "PG",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3165048
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 46,
+  "fields": {
+    "name": "Provincia di Pesaro e Urbino",
+    "name_ascii": "Provincia di Pesaro e Urbino",
+    "slug": "provincia-di-pesaro-e-urbino",
+    "geoname_id": 3171172,
+    "alternate_names": "",
+    "display_name": "Provincia di Pesaro e Urbino, Italy",
+    "geoname_code": "PU",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3174004
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 45,
+  "fields": {
+    "name": "Provincia di Pescara",
+    "name_ascii": "Provincia di Pescara",
+    "slug": "provincia-di-pescara",
+    "geoname_id": 3171163,
+    "alternate_names": "",
+    "display_name": "Provincia di Pescara, Italy",
+    "geoname_code": "PE",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3183560
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 44,
+  "fields": {
+    "name": "Provincia di Piacenza",
+    "name_ascii": "Provincia di Piacenza",
+    "slug": "provincia-di-piacenza",
+    "geoname_id": 3171057,
+    "alternate_names": "",
+    "display_name": "Provincia di Piacenza, Italy",
+    "geoname_code": "PC",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3177401
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 42,
+  "fields": {
+    "name": "Provincia di Pistoia",
+    "name_ascii": "Provincia di Pistoia",
+    "slug": "provincia-di-pistoia",
+    "geoname_id": 3170620,
+    "alternate_names": "",
+    "display_name": "Provincia di Pistoia, Italy",
+    "geoname_code": "PT",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3165361
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 40,
+  "fields": {
+    "name": "Provincia di Potenza",
+    "name_ascii": "Provincia di Potenza",
+    "slug": "provincia-di-potenza",
+    "geoname_id": 3170025,
+    "alternate_names": "",
+    "display_name": "Provincia di Potenza, Italy",
+    "geoname_code": "PZ",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3182306
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 103,
+  "fields": {
+    "name": "Provincia di Prato",
+    "name_ascii": "Provincia di Prato",
+    "slug": "provincia-di-prato",
+    "geoname_id": 6458618,
+    "alternate_names": "",
+    "display_name": "Provincia di Prato, Italy",
+    "geoname_code": "PO",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3165361
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 39,
+  "fields": {
+    "name": "Provincia di Ravenna",
+    "name_ascii": "Provincia di Ravenna",
+    "slug": "provincia-di-ravenna",
+    "geoname_id": 3169560,
+    "alternate_names": "",
+    "display_name": "Provincia di Ravenna, Italy",
+    "geoname_code": "RA",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3177401
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 3,
+  "fields": {
+    "name": "Provincia di Reggio Calabria",
+    "name_ascii": "Provincia di Reggio Calabria",
+    "slug": "provincia-di-reggio-calabria",
+    "geoname_id": 2523629,
+    "alternate_names": "",
+    "display_name": "Provincia di Reggio Calabria, Italy",
+    "geoname_code": "RC",
+    "country": [
+      3175395
+    ],
+    "region": [
+      2525468
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 38,
+  "fields": {
+    "name": "Provincia di Reggio Emilia",
+    "name_ascii": "Provincia di Reggio Emilia",
+    "slug": "provincia-di-reggio-emilia",
+    "geoname_id": 3169524,
+    "alternate_names": "",
+    "display_name": "Provincia di Reggio Emilia, Italy",
+    "geoname_code": "RE",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3177401
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 37,
+  "fields": {
+    "name": "Provincia di Rieti",
+    "name_ascii": "Provincia di Rieti",
+    "slug": "provincia-di-rieti",
+    "geoname_id": 3169411,
+    "alternate_names": "",
+    "display_name": "Provincia di Rieti, Italy",
+    "geoname_code": "RI",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3174976
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 98,
+  "fields": {
+    "name": "Provincia di Rimini",
+    "name_ascii": "Provincia di Rimini",
+    "slug": "provincia-di-rimini",
+    "geoname_id": 6457404,
+    "alternate_names": "Rimini",
+    "display_name": "Provincia di Rimini, Italy",
+    "geoname_code": "RN",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3177401
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 35,
+  "fields": {
+    "name": "Provincia di Rovigo",
+    "name_ascii": "Provincia di Rovigo",
+    "slug": "provincia-di-rovigo",
+    "geoname_id": 3168842,
+    "alternate_names": "",
+    "display_name": "Provincia di Rovigo, Italy",
+    "geoname_code": "RO",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3164604
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 34,
+  "fields": {
+    "name": "Provincia di Salerno",
+    "name_ascii": "Provincia di Salerno",
+    "slug": "provincia-di-salerno",
+    "geoname_id": 3168670,
+    "alternate_names": "Salerno",
+    "display_name": "Provincia di Salerno, Italy",
+    "geoname_code": "SA",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3181042
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 33,
+  "fields": {
+    "name": "Provincia di Sassari",
+    "name_ascii": "Provincia di Sassari",
+    "slug": "provincia-di-sassari",
+    "geoname_id": 3167094,
+    "alternate_names": "",
+    "display_name": "Provincia di Sassari, Italy",
+    "geoname_code": "SS",
+    "country": [
+      3175395
+    ],
+    "region": [
+      2523228
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 32,
+  "fields": {
+    "name": "Provincia di Savona",
+    "name_ascii": "Provincia di Savona",
+    "slug": "provincia-di-savona",
+    "geoname_id": 3167021,
+    "alternate_names": "",
+    "display_name": "Provincia di Savona, Italy",
+    "geoname_code": "SV",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3174725
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 31,
+  "fields": {
+    "name": "Provincia di Siena",
+    "name_ascii": "Provincia di Siena",
+    "slug": "provincia-di-siena",
+    "geoname_id": 3166546,
+    "alternate_names": "",
+    "display_name": "Provincia di Siena, Italy",
+    "geoname_code": "SI",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3165361
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 2,
+  "fields": {
+    "name": "Provincia di Siracusa",
+    "name_ascii": "Provincia di Siracusa",
+    "slug": "provincia-di-siracusa",
+    "geoname_id": 2523082,
+    "alternate_names": "",
+    "display_name": "Provincia di Siracusa, Italy",
+    "geoname_code": "SR",
+    "country": [
+      3175395
+    ],
+    "region": [
+      2523119
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 30,
+  "fields": {
+    "name": "Provincia di Sondrio",
+    "name_ascii": "Provincia di Sondrio",
+    "slug": "provincia-di-sondrio",
+    "geoname_id": 3166396,
+    "alternate_names": "",
+    "display_name": "Provincia di Sondrio, Italy",
+    "geoname_code": "SO",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3174618
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 29,
+  "fields": {
+    "name": "Provincia di Taranto",
+    "name_ascii": "Provincia di Taranto",
+    "slug": "provincia-di-taranto",
+    "geoname_id": 3165924,
+    "alternate_names": "",
+    "display_name": "Provincia di Taranto, Italy",
+    "geoname_code": "TA",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3169778
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 28,
+  "fields": {
+    "name": "Provincia di Teramo",
+    "name_ascii": "Provincia di Teramo",
+    "slug": "provincia-di-teramo",
+    "geoname_id": 3165802,
+    "alternate_names": "",
+    "display_name": "Provincia di Teramo, Italy",
+    "geoname_code": "TE",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3183560
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 27,
+  "fields": {
+    "name": "Provincia di Terni",
+    "name_ascii": "Provincia di Terni",
+    "slug": "provincia-di-terni",
+    "geoname_id": 3165770,
+    "alternate_names": "",
+    "display_name": "Provincia di Terni, Italy",
+    "geoname_code": "TR",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3165048
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 24,
+  "fields": {
+    "name": "Provincia di Treviso",
+    "name_ascii": "Provincia di Treviso",
+    "slug": "provincia-di-treviso",
+    "geoname_id": 3165200,
+    "alternate_names": "",
+    "display_name": "Provincia di Treviso, Italy",
+    "geoname_code": "TV",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3164604
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 21,
+  "fields": {
+    "name": "Provincia di Varese",
+    "name_ascii": "Provincia di Varese",
+    "slug": "provincia-di-varese",
+    "geoname_id": 3164697,
+    "alternate_names": "",
+    "display_name": "Provincia di Varese, Italy",
+    "geoname_code": "VA",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3174618
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 20,
+  "fields": {
+    "name": "Provincia di Venezia",
+    "name_ascii": "Provincia di Venezia",
+    "slug": "provincia-di-venezia",
+    "geoname_id": 3164600,
+    "alternate_names": "Venezia",
+    "display_name": "Provincia di Venezia, Italy",
+    "geoname_code": "VE",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3164604
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 18,
+  "fields": {
+    "name": "Provincia di Vercelli",
+    "name_ascii": "Provincia di Vercelli",
+    "slug": "provincia-di-vercelli",
+    "geoname_id": 3164564,
+    "alternate_names": "",
+    "display_name": "Provincia di Vercelli, Italy",
+    "geoname_code": "VC",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3170831
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 17,
+  "fields": {
+    "name": "Provincia di Verona",
+    "name_ascii": "Provincia di Verona",
+    "slug": "provincia-di-verona",
+    "geoname_id": 3164526,
+    "alternate_names": "Verona",
+    "display_name": "Provincia di Verona, Italy",
+    "geoname_code": "VR",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3164604
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 99,
+  "fields": {
+    "name": "Provincia di Vibo-Valentia",
+    "name_ascii": "Provincia di Vibo-Valentia",
+    "slug": "provincia-di-vibo-valentia",
+    "geoname_id": 6457405,
+    "alternate_names": "Provincia di Vibo Valentia",
+    "display_name": "Provincia di Vibo-Valentia, Italy",
+    "geoname_code": "VV",
+    "country": [
+      3175395
+    ],
+    "region": [
+      2525468
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 16,
+  "fields": {
+    "name": "Provincia di Vicenza",
+    "name_ascii": "Provincia di Vicenza",
+    "slug": "provincia-di-vicenza",
+    "geoname_id": 3164418,
+    "alternate_names": "",
+    "display_name": "Provincia di Vicenza, Italy",
+    "geoname_code": "VI",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3164604
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 15,
+  "fields": {
+    "name": "Provincia di Viterbo",
+    "name_ascii": "Provincia di Viterbo",
+    "slug": "provincia-di-viterbo",
+    "geoname_id": 3164038,
+    "alternate_names": "",
+    "display_name": "Provincia di Viterbo, Italy",
+    "geoname_code": "VT",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3174976
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 19,
+  "fields": {
+    "name": "Provincia Verbano-Cusio-Ossola",
+    "name_ascii": "Provincia Verbano-Cusio-Ossola",
+    "slug": "provincia-verbano-cusio-ossola",
+    "geoname_id": 3164567,
+    "alternate_names": "Provincia del Verbano-Cusio-Ossola;Verbania",
+    "display_name": "Provincia Verbano-Cusio-Ossola, Italy",
+    "geoname_code": "VB",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3170831
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 4,
+  "fields": {
+    "name": "Ragusa",
+    "name_ascii": "Ragusa",
+    "slug": "ragusa",
+    "geoname_id": 2523649,
+    "alternate_names": "Libero Consorzio Comunale di Ragusa;Provincia di Ragusa",
+    "display_name": "Ragusa, Italy",
+    "geoname_code": "RG",
+    "country": [
+      3175395
+    ],
+    "region": [
+      2523119
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 26,
+  "fields": {
+    "name": "Torino",
+    "name_ascii": "Torino",
+    "slug": "torino",
+    "geoname_id": 3165523,
+    "alternate_names": "Città Metropolitana di Torino;Provincia di Torino",
+    "display_name": "Torino, Italy",
+    "geoname_code": "TO",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3170831
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 1,
+  "fields": {
+    "name": "Trapani",
+    "name_ascii": "Trapani",
+    "slug": "trapani",
+    "geoname_id": 2522875,
+    "alternate_names": "Libero Consorzio Comunale di Trapani;Provincia di Trapani",
+    "display_name": "Trapani, Italy",
+    "geoname_code": "TP",
+    "country": [
+      3175395
+    ],
+    "region": [
+      2523119
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 23,
+  "fields": {
+    "name": "Trieste",
+    "name_ascii": "Trieste",
+    "slug": "trieste",
+    "geoname_id": 3165184,
+    "alternate_names": "Ente di Decentramento Regionale di Trieste;Provincia di Trieste",
+    "display_name": "Trieste, Italy",
+    "geoname_code": "TS",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3176525
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 22,
+  "fields": {
+    "name": "Udine",
+    "name_ascii": "Udine",
+    "slug": "udine",
+    "geoname_id": 3165071,
+    "alternate_names": "Ente di Decentramento Regionale di Udine;Provincia di Udine",
+    "display_name": "Udine, Italy",
+    "geoname_code": "UD",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3176525
+    ]
+  }
+},
+{
+  "model": "cities_light.subregion",
+  "pk": 94,
+  "fields": {
+    "name": "Valle d'Aosta",
+    "name_ascii": "Valle d'Aosta",
+    "slug": "valle-daosta",
+    "geoname_id": 3182996,
+    "alternate_names": "Provincia di Aosta",
+    "display_name": "Valle d'Aosta, Italy",
+    "geoname_code": "AO",
+    "country": [
+      3175395
+    ],
+    "region": [
+      3164857
+    ]
+  }
+}
+]

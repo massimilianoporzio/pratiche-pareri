@@ -1,0 +1,21 @@
+[
+{
+  "model": "datoriLavoro.datorelavorosede",
+  "pk": "d34433a7-c0b0-42cf-b9de-c9297ce86178",
+  "fields": {
+    "created_at": "2025-08-19T15:16:50.378Z",
+    "updated_at": "2025-08-19T15:16:50.378Z",
+    "created_by": null,
+    "created_by_fullname": "",
+    "updated_by": [
+      "massimiliano.porzio@aslcn1.it"
+    ],
+    "updated_by_fullname": "massimiliano.porzio",
+    "version": 1755615663697387,
+    "is_active": true,
+    "datore_lavoro": "ae3b8f2b-5edf-4d70-b904-dea32f2ada15",
+    "sede": "1d3a7abc-601f-4c14-9e18-914824811f5c",
+    "is_sede_legale": true
+  }
+}
+]

@@ -123,7 +123,7 @@ class DatoreLavoro(MyModel):
         super().save(*args, **kwargs)
 
 
-class DatoreLavoroSede(models.Model):
+class DatoreLavoroSede(MyModel):
     datore_lavoro = models.ForeignKey(
         DatoreLavoro, on_delete=models.CASCADE, blank=True, null=True
     )

@@ -1,0 +1,18 @@
+[
+{
+  "model": "cities_light.country",
+  "pk": 1,
+  "fields": {
+    "name": "Italia",
+    "name_ascii": "Italy",
+    "slug": "italy",
+    "geoname_id": 3175395,
+    "alternate_names": "Italia;Repubblica Italiana;il Bel Paese",
+    "code2": "IT",
+    "code3": "ITA",
+    "continent": "EU",
+    "tld": "it",
+    "phone": "39"
+  }
+}
+]
