@@ -11,12 +11,13 @@ PRODUCTION = os.environ.get("PRODUCTION", "0") == "1"
 SECRET_KEY = os.environ.get("SECRET_KEY", "your-default-secret-key")
 ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "*").split(" ")
 
+
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "pratiche_pareri_prod",
         "USER": "pratiche",
-        "PASSWORD": "e0Sv;V%iBh&1@Lmu",
+        "PASSWORD": os.environ.get("DATABASE_PASSWORD"),
         "HOST": "localhost",
         "PORT": "5432",
     }
