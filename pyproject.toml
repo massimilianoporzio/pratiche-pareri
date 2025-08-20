@@ -19,7 +19,11 @@ dependencies = [
 ]
 [dependency-groups]
 # Dipendenze di sviluppo
-dev = ["django-debug-toolbar>=6.0.0", "djlint>=1.36.4"]
+dev = [
+    "django-debug-toolbar>=6.0.0",
+    "djlint>=1.36.4",
+    "waitress>=3.0.2",
+]
 # Dipendenze aggiuntive per il testing
 test = []
 # Dipendenze per lo stage (es. librerie per monitoraggio)
