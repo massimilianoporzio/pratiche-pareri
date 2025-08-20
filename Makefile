@@ -18,6 +18,9 @@ migrations:
 migrations-stage:
 	uv run manage.stage.py makemigrations
 
+.PHONY: run-server-docker-prod
+run-server-docker-prod: rundb-if-needed
+	uv run manage.prod.py runserver
 
 .PHONY: run-server
 run-server: rundb-if-needed
@@ -98,7 +101,7 @@ rundb:
 stopdb:
 	 docker compose down
 
-.PHONY: rundb-if-needed
+
 .PHONY: rundb-if-needed
 rundb-if-needed:
 ifeq ($(USE_DOCKER_FOR_DB),1)
