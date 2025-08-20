@@ -15,11 +15,17 @@ from pratiche.admin import custom_admin_site
 # logger.error("This is an error message")
 # logger.critical("This is a critical message")
 
+prefix = getattr(settings, "URL_PREFIX", "")
 urlpatterns = [
     path("admin/", custom_admin_site.urls),
-    path("", RedirectView.as_view(url="/admin/login/", permanent=False), name="home"),
+    path(
+        "",
+        RedirectView.as_view(url=prefix + "admin/login/", permanent=False),
+        name="home",
+    ),
     path("__debug__/", include("debug_toolbar.urls")),
 ]
+
 
 if not settings.PRODUCTION:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
