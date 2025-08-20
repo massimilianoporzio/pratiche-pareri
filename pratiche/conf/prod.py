@@ -11,8 +11,6 @@ PRODUCTION = os.environ.get("PRODUCTION", "0") == "1"
 SECRET_KEY = os.environ.get("SECRET_KEY", "your-default-secret-key")
 ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "*").split(" ")
 
-URL_PREFIX = "pratiche_pareri/"
-
 
 DATABASES = {
     "default": {
