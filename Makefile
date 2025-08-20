@@ -53,12 +53,17 @@ endif
 .PHONY: dump_full
 dump_full:
 	@echo "Eseguo il dump di tutte le tabelle..."
-	@python -Xutf8  manage.stage.py  dumpdata users.customuser cities_light.country cities_light.region cities_light.subregion cities_light.city pareri datoriLavoro --indent 2 --output fixtures/full_dump.json
+	@python -Xutf8  manage.py dumpdata auth.Group auth.Permission users.customuser cities_light.country cities_light.region cities_light.subregion cities_light.city pareri datoriLavoro --indent 2 --output fixtures/full_dump.json
 
 .PHONY: loaddata_full-stage
 loaddata_full-stage:
 	@echo "Carico i dati da un dump completo..."
 	@python -Xutf8  manage.stage.py  loaddata --traceback fixtures/full_dump.json
+
+.PHONY: loaddata_full-prod
+loaddata_full-prod:
+	@echo "Carico i dati da un dump completo..."
+	@python -Xutf8  manage.prod.py  loaddata --traceback fixtures/full_dump.json
 
 
 
