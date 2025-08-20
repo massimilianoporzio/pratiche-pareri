@@ -14,9 +14,9 @@ ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "*").split(" ")
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "pratiche",
-        "USER": "postgres",
-        "PASSWORD": "massichiara07",
+        "NAME": "pratiche_pareri_prod",
+        "USER": "pratiche_pareri",
+        "PASSWORD": os.environ.get("DATABASE_PASSWORD"),
         "HOST": "localhost",
         "PORT": "5432",
     }
