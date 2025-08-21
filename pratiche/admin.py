@@ -6,6 +6,8 @@ from django.contrib.admin.templatetags.admin_modify import (
 )
 from django.contrib.admin.templatetags.base import InclusionAdminNode
 
+from users.forms import CustomAuthenticationForm
+
 # Nome del gruppo che avrà accesso completo
 FULL_ACCESS_GROUP_NAME = "Full Access Admin"
 
@@ -18,6 +20,8 @@ AUTHORIZED_APPS = [
 
 
 class CustomAdminSite(admin.AdminSite):
+    login_form = CustomAuthenticationForm
+
     def get_app_list(self, request):
         app_list = super().get_app_list(request)
 

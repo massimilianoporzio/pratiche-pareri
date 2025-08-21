@@ -6,7 +6,11 @@ from django.utils.translation import gettext_lazy as _
 
 # Crea un'istanza dell'AdminSite personalizzato
 from pratiche.admin import custom_admin_site
-from users.forms import CustomUserChangeForm, CustomUserCreationForm
+from users.forms import (
+    CustomAuthenticationForm,
+    CustomUserChangeForm,
+    CustomUserCreationForm,
+)
 
 from .models import CustomUser
 
@@ -25,6 +29,7 @@ class CustomUserAdmin(UserAdmin):
     # Usa il form personalizzato per la creazione di nuovi utenti
     add_form = CustomUserCreationForm
     form = CustomUserChangeForm
+
     # I campi da visualizzare nella lista degli utenti nell'admin
     list_display = (
         "email",

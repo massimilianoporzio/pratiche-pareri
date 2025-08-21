@@ -3,15 +3,24 @@ from concurrency.fields import IntegerVersionField
 from crum import get_current_user
 from django.conf import settings
 from django.contrib.auth.models import AbstractUser, BaseUserManager
+from django.core.exceptions import ValidationError
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
 
 # Manager personalizzato per il tuo CustomUser
 class CustomUserManager(BaseUserManager):
+    def full_clean(self, email):
+        if not email.endswith("@aslcn1.it"):
+            raise ValidationError(
+                _("Il dominio dell'indirizzo email deve essere 'aslcn1.it'.")
+            )
+
     def create_user(self, email, password=None, **extra_fields):
         if not email:
             raise ValueError(_("L'indirizzo email deve essere impostato"))
+        # Aggiungi la validazione qui
+        self.full_clean(email)
         email = self.normalize_email(email)
         user = self.model(email=email, **extra_fields)
         user.set_password(password)
@@ -19,6 +28,8 @@ class CustomUserManager(BaseUserManager):
         return user
 
     def create_superuser(self, email, password=None, **extra_fields):
+        # Aggiungi la validazione qui
+        self.full_clean(email)
         # Imposta i campi necessari per un superuser
         extra_fields.setdefault("is_staff", True)
         extra_fields.setdefault("is_superuser", True)
@@ -112,6 +123,13 @@ class CustomUser(AbstractUser):
         elif self.last_name:
             return self.last_name
         return self.get_short_name()
+
+    def clean(self):
+        super().clean()
+        if self.email and not self.email.endswith("@aslcn1.it"):
+            raise ValidationError(
+                _("Il dominio dell'indirizzo email deve essere 'aslcn1.it'.")
+            )
 
     def save(self, *args, **kwargs):
 
