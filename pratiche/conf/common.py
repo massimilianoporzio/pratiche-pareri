@@ -253,6 +253,7 @@ LOGGING = {
             "django.security",
             "pratiche",
             "users",
+            "datoriLavoro",
         )
     },
     "root": {
