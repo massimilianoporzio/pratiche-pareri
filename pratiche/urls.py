@@ -21,11 +21,7 @@ if settings.PRODUCTION:
     logger.critical("This is a critical message")
 
 
-urlpatterns = [
-    path(
-        "pratiche_pareri/",
-        include(
-            [
+urlpatterns =  [
                 path("admin/", custom_admin_site.urls),
                 path(
                     "",
@@ -35,9 +31,6 @@ urlpatterns = [
                 path("500-test/", error_500_test, name="error_500_test"),
                 path("__debug__/", include("debug_toolbar.urls")),
             ]
-        ),
-    ),
-]
 
 
 if not settings.PRODUCTION:

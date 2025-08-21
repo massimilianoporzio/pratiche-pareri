@@ -10,49 +10,68 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('pareri', '0001_initial'),
+        ('cities_light', '0012_cityproxy_countryproxy_regionproxy'),
+        ('datoriLavoro', '0001_initial'),
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='espertoradioprotezione',
+            model_name='datorelavoro',
             name='created_by',
             field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='created_%(class)s_set', to=settings.AUTH_USER_MODEL),
         ),
         migrations.AddField(
-            model_name='espertoradioprotezione',
+            model_name='datorelavoro',
             name='updated_by',
             field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='updated_%(class)s_set', to=settings.AUTH_USER_MODEL),
         ),
         migrations.AddField(
-            model_name='tipoorigine',
+            model_name='datorelavorosede',
             name='created_by',
             field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='created_%(class)s_set', to=settings.AUTH_USER_MODEL),
         ),
         migrations.AddField(
-            model_name='tipoorigine',
+            model_name='datorelavorosede',
+            name='datore_lavoro',
+            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='datoriLavoro.datorelavoro'),
+        ),
+        migrations.AddField(
+            model_name='datorelavorosede',
             name='updated_by',
             field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='updated_%(class)s_set', to=settings.AUTH_USER_MODEL),
         ),
         migrations.AddField(
-            model_name='tipopratica',
+            model_name='sede',
+            name='citta',
+            field=models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='cities_light.cityproxy', verbose_name='Città'),
+        ),
+        migrations.AddField(
+            model_name='sede',
             name='created_by',
             field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='created_%(class)s_set', to=settings.AUTH_USER_MODEL),
         ),
         migrations.AddField(
-            model_name='tipopratica',
+            model_name='sede',
             name='updated_by',
             field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='updated_%(class)s_set', to=settings.AUTH_USER_MODEL),
         ),
         migrations.AddField(
-            model_name='tipoprocesso',
-            name='created_by',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='created_%(class)s_set', to=settings.AUTH_USER_MODEL),
+            model_name='datorelavorosede',
+            name='sede',
+            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='datoriLavoro.sede'),
         ),
         migrations.AddField(
-            model_name='tipoprocesso',
-            name='updated_by',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='updated_%(class)s_set', to=settings.AUTH_USER_MODEL),
+            model_name='datorelavoro',
+            name='sedi',
+            field=models.ManyToManyField(related_name='datori_lavoro', through='datoriLavoro.DatoreLavoroSede', to='datoriLavoro.sede', verbose_name='Sedi'),
+        ),
+        migrations.AddConstraint(
+            model_name='datorelavorosede',
+            constraint=models.UniqueConstraint(condition=models.Q(('is_sede_legale', True)), fields=('sede', 'is_sede_legale'), name='unique_legal_office_for_each_sede'),
+        ),
+        migrations.AlterUniqueTogether(
+            name='datorelavorosede',
+            unique_together={('datore_lavoro', 'sede')},
         ),
     ]
