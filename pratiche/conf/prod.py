@@ -39,3 +39,23 @@ JAZZMIN_SETTINGS["hide_apps"] = [
     "cities_light",
     "sites",
 ]
+
+# 1. Aggiungere il nuovo handler 'file'
+LOGGING["handlers"]["file"] = {
+    "level": "INFO",
+    "class": "logging.handlers.RotatingFileHandler",
+    "formatter": "standard",
+    "filename": "E:/prod/logs/pratiche_pareri/pratiche_pareri_log",
+    "maxBytes": 1024 * 1024 * 5,  # 5 MB
+    "backupCount": 5,
+}
+
+# 2. Modificare il logger 'root' per usare l'handler 'file'
+LOGGING["root"]["handlers"] = ["file"]
+
+# 3. Aggiungere il logger vuoto per i messaggi non specifici
+LOGGING["loggers"][""] = {
+    "level": "INFO",
+    "handlers": ["file"],
+    "propagate": False,
+}

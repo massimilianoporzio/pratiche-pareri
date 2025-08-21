@@ -1,5 +1,7 @@
 # import logging
 
+import logging
+
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
@@ -8,12 +10,14 @@ from django.views.generic import RedirectView
 
 from pratiche.admin import custom_admin_site
 
-# logger = logging.getLogger(__name__)
-# logger.debug("This is a debug message")
-# logger.info("This is an info message")
-# logger.warning("This is a warning message")
-# logger.error("This is an error message")
-# logger.critical("This is a critical message")
+if settings.PRODUCTION:
+    # test the logger
+    logger = logging.getLogger(__name__)
+    logger.debug("This is a debug message")
+    logger.info("This is an info message")
+    logger.warning("This is a warning message")
+    logger.error("This is an error message")
+    logger.critical("This is a critical message")
 
 
 urlpatterns = [
