@@ -8,6 +8,7 @@ from django.contrib import admin
 from django.urls import include, path
 from django.views.generic import RedirectView
 
+from core.views import error_500_test
 from pratiche.admin import custom_admin_site
 
 if settings.PRODUCTION:
@@ -27,6 +28,7 @@ urlpatterns = [
         RedirectView.as_view(url="admin/login/", permanent=False),
         name="home",
     ),
+    path("500-test/", error_500_test, name="error_500_test"),
     path("__debug__/", include("debug_toolbar.urls")),
 ]
 

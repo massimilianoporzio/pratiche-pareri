@@ -2,6 +2,7 @@
   --colore-principale: #e00f90;
   --colore-secondario: #b909a2; /* per il colore di hover */
   --colore-hover: #dd0bc1;
+  --primary: #e00f90;
 }
 
 .login-logo img {
