@@ -10,6 +10,7 @@ DEBUG = os.environ.get("DEBUG", "0") == "1"
 PRODUCTION = os.environ.get("PRODUCTION", "0") == "1"
 SECRET_KEY = os.environ.get("SECRET_KEY", "your-default-secret-key")
 ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "*").split(" ")
+LOG_DIR = os.environ.get("LOG_DIR", BASE_DIR)
 
 
 DATABASES = {
@@ -45,7 +46,7 @@ LOGGING["handlers"]["file"] = {
     "level": "INFO",
     "class": "logging.handlers.RotatingFileHandler",
     "formatter": "standard",
-    "filename": "E:/prod/logs/pratiche_pareri/pratiche_pareri_log",
+    "filename": os.path.join(LOG_DIR, "pratiche_pareri_log"),
     "maxBytes": 1024 * 1024 * 5,  # 5 MB
     "backupCount": 5,
 }
