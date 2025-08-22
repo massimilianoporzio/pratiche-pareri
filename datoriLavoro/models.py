@@ -84,6 +84,7 @@ def validate_codice_fiscale(value):
 
 
 class DatoreLavoro(MyModel):
+
     ragione_sociale = models.CharField(
         max_length=255,
         verbose_name=_("Ragione Sociale"),
