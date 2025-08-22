@@ -1,5 +1,5 @@
 # Definisci il percorso e l'URL del repository
-$repoPath = "E:\prod\pratiche_pareri"
+$repoPath = "E:\prod\pratiche-pareri"
 $repoUrl = "https://github.com/massimilianoporzio/pratiche-pareri.git"
 
 # Verifica se la cartella esiste
