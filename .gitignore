@@ -96,8 +96,6 @@ celerybeat-schedule.*
 # SageMath parsed files
 *.sage.py
 
-# File di configurazione di IIS
-web.config
 
 # Environments
 .env
