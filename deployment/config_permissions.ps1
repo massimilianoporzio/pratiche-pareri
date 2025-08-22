@@ -1,5 +1,5 @@
 # Permessi per la cartella del progetto
-$projectPath = "E:\prod\pratiche_pareri"
+$projectPath = "E:\prod\pratiche-pareri"
 $poolIdentity = "IIS AppPool\$poolName"
 
 Write-Host "🔧 Configurazione permessi..." -ForegroundColor Yellow
