@@ -3,5 +3,5 @@ export DEBUG=1
 export USE_DOCKER_FOR_DB=0 #use 1 if using docker
 export PRODUCTION=0
 export SECRET_KEY='your-secret-key'
-export DJANGO_ALLOWED_HOSTS=* localhost 127.0.0.1 [::1]
-export DATABASE_PASSWORD='e0Sv;V%iBh&1@Lmu'
+export DJANGO_ALLOWED_HOSTS=* localhost 127.0.0.1 [::1] # add IP address of the host for production
+export DATABASE_PASSWORD='super-secret-password'
