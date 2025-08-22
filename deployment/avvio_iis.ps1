@@ -4,7 +4,7 @@ iisreset
 
 # Attendi qualche secondo per l'avvio
 Start-Sleep -Seconds 5
-
+$poolName = "pratiche_pareri"
 # Verifica stato Application Pool
 $pool = Get-IISAppPool -Name $poolName
 Write-Host "✅ Application Pool stato: $($pool.State)" -ForegroundColor Green
