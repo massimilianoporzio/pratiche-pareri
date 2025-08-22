@@ -11,7 +11,7 @@ Write-Host "✅ Cartella creata: $logPath" -ForegroundColor Green
 # Assegna permessi all'Application Pool (che creeremo dopo)
 $acl = Get-Acl $logPath
 $identity = "IIS AppPool\$poolName"
-$accessRule = New-Object System.Security.AccessControl.FileSystemAccessRule($identity,"FullControl","ContainerInherit,ObjectInherit","None","Allow")
+$accessRule = New-Object System.Security.AccessControl.FileSystemAccessRule($identity, "FullControl", "ContainerInherit,ObjectInherit", "None", "Allow")
 $acl.SetAccessRule($accessRule)
 Set-Acl $logPath $acl
 
@@ -23,6 +23,7 @@ try {
     "Test setup $(Get-Date)" | Out-File $testFile
     Remove-Item $testFile
     Write-Host "✅ Test scrittura riuscito" -ForegroundColor Green
-} catch {
+}
+catch {
     Write-Host "⚠️ Test scrittura fallito (normale prima di creare l'Application Pool)" -ForegroundColor Yellow
 }
