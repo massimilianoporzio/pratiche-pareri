@@ -68,6 +68,10 @@ loaddata_full-prod:
 	@echo "Carico i dati da un dump completo..."
 	@python -Xutf8  manage.prod.py  loaddata --traceback fixtures/full_dump.json
 
+.PHONY: loaddata_full-dev
+loaddata_full-dev:
+	@echo "Carico i dati da un dump completo..."
+	@python -Xutf8  manage.py  loaddata --traceback fixtures/full_dump.json
 
 
 .PHONY: loaddata-stage
