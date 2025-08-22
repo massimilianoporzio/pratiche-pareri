@@ -21,10 +21,11 @@
 9. Attiva il virtual environment: `.\venv\Scripts\activate`
 10. Esegui un caricamento dei dati iniziali `make loaddata_full-prod`
 11. Imposta la cartella dei log con i permessi: `deployment\config_log_files.ps1`
-12. Configura Application Pool "pratiche_pareri" : `deployment\config_log_files.ps1`
-13. Crea applicazione IIS "pratiche_pareri" sotto un sito (es: Default Site) che ascolta sulla porta 80
-14. Configura cartella log: `E:\prod\logs\pratiche_pareri` (puoi usare lo script 'setup_log.ps1')
-15. Raccogli file statici: `uv run manage.prod.py collectstatic`
+12. Configura Application Pool "pratiche_pareri" : `deployment\config_application_pool.ps1`
+13. Configura i permessi: `deployment\config_permissioons.ps1`
+14. Testa la configurazione Django: `deployment\test_django_settings.ps1`
+15. Raccogli file statici: `deployment\collect_staticfiles.ps1`
+16. Crea applicazione IIS "pratiche_pareri" sotto un sito (es: Default Site) che ascolta sulla porta 80
 
 ## URL
 
