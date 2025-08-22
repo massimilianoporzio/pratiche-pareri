@@ -6,9 +6,9 @@
 - HTTPPlatformHandler installato
 - Python e uv
 
-## Deploy
+## Deploy (apri terminale powershell)
 
-1. Clona il repository in `C:\inetpub\wwwroot\pratiche_pareri`
+1. Clona il repository in `E:\prod\pratiche-pareri`
 2. Crea virtual environment: `uv venv`
 3. Installa dipendenze: `uv sync`
 4. Configura Application Pool "pratiche_pareri"
