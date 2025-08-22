@@ -2,7 +2,7 @@ Import-Module WebAdministration
 # Crea l'applicazione sotto Default Web Site
 $siteName = "Default Web Site"
 $appName = "pratiche_pareri"
-$physicalPath = "C:\inetpub\wwwroot\pratiche-pareri"
+$physicalPath = "E:\prod\pratiche-pareri"
 
 # Rimuovi applicazione esistente se presente
 $existingApp = Get-WebApplication -Name $appName -Site $siteName -ErrorAction SilentlyContinue
