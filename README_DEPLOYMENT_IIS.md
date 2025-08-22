@@ -22,5 +22,5 @@ Il sito sarà disponibile su: `http://server-ip/pratiche_pareri/`
 
 ## Log
 
-- Django: `E:\prod\logs\pratiche_pareri\pratiche_pareri_log`
+- Django: `E:\prod\logs\pratiche_pareri\pratiche_pareri.log`
 - IIS: `C:\inetpub\wwwroot\mio-sito\python.log`
