@@ -56,7 +56,7 @@ endif
 .PHONY: dump_full
 dump_full:
 	@echo "Eseguo il dump di tutte le tabelle..."
-	@python -Xutf8  manage.py dumpdata  --exclude contenttypes auth.Group auth.Permission users.customuser cities_light.country cities_light.region cities_light.subregion cities_light.city pareri datoriLavoro --indent 2 --output fixtures/full_dump.json
+	@python -Xutf8  manage.py dumpdata --exclude contenttypes --exclude auth.Permission auth.Group users.customuser cities_light.country cities_light.region cities_light.subregion cities_light.city pareri datoriLavoro --indent 2 --output fixtures/full_dump.json
 
 .PHONY: loaddata_full-stage
 loaddata_full-stage:
