@@ -139,3 +139,4 @@ GitHub.sublime-settings
 
 #node_modules
 node_modules/
+deployment/migrate.ps1
