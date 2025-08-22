@@ -10,7 +10,6 @@ DEBUG = os.environ.get("DEBUG", "0") == "1"
 PRODUCTION = os.environ.get("PRODUCTION", "0") == "1"
 SECRET_KEY = os.environ.get("SECRET_KEY", "your-default-secret-key")
 ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "*").split(" ")
-LOG_DIR = os.environ.get("LOG_DIR", BASE_DIR)
 
 
 DATABASES = {
@@ -30,26 +29,37 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "media"),
 ]
 
+FORCE_SCRIPT_NAME = "/pratiche_pareri"
 STATIC_URL = "/static/"
 MEDIA_URL = "/media/"
 
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-MEDIA_ROOT = os.path.join(BASE_DIR, "mediafiles")
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 JAZZMIN_SETTINGS["hide_apps"] = [
     "cities_light",
     "sites",
 ]
 
+# Configurazione logging per Windows Server
+LOG_DIR = os.environ.get("LOG_DIR", r"E:\prod\logs\pratiche_pareri")
+os.makedirs(LOG_DIR, exist_ok=True)
+
 # 1. Aggiungere il nuovo handler 'file'
 LOGGING["handlers"]["file"] = {
     "level": "INFO",
     "class": "logging.handlers.RotatingFileHandler",
     "formatter": "standard",
-    "filename": os.path.join(LOG_DIR, "pratiche_pareri_log"),
+    "filename": os.path.join(LOG_DIR, "pratiche_pareri.log"),
     "maxBytes": 1024 * 1024 * 5,  # 5 MB
     "backupCount": 5,
 }
+
+# Configurazione per reverse proxy IIS
+USE_X_FORWARDED_HOST = True
+USE_X_FORWARDED_PORT = True
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+
 
 # 2. Modificare il logger 'root' per usare l'handler 'file'
 LOGGING["root"]["handlers"] = ["file"]
