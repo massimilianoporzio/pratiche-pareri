@@ -21,16 +21,16 @@ if settings.PRODUCTION:
     logger.critical("This is a critical message")
 
 
-urlpatterns =  [
-                path("admin/", custom_admin_site.urls),
-                path(
-                    "",
-                    RedirectView.as_view(url="admin/login/", permanent=False),
-                    name="home",
-                ),
-                path("500-test/", error_500_test, name="error_500_test"),
-                path("__debug__/", include("debug_toolbar.urls")),
-            ]
+urlpatterns = [
+    path("admin/", custom_admin_site.urls),
+    path(
+        "",
+        RedirectView.as_view(url="admin/login/", permanent=False),
+        name="home",
+    ),
+    path("500-test/", error_500_test, name="error_500_test"),
+    path("__debug__/", include("debug_toolbar.urls")),
+]
 
 
 if not settings.PRODUCTION:
