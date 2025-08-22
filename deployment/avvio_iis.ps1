@@ -1,3 +1,5 @@
+Import-Module IISAdministration
+Import-Module WebAdministration
 # Riavvia IIS per applicare tutte le configurazioni
 Write-Host "🔄 Riavvio IIS..." -ForegroundColor Yellow
 iisreset
