@@ -5,6 +5,8 @@
 - Windows Server con IIS
 - HTTPPlatformHandler installato
 - Python e uv
+- Make (usando [scoop][https://github.com/ScoopInstaller/Scoop#readme] scoop install make)
+- Powershell con privilegi di admin
 
 ## Deploy (apri terminale powershell)
 
@@ -15,11 +17,14 @@
 5. (se del caso) genera una secret-key per la produzione con `python manage.py shell -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"`
 6. Aggiorna il contenuto del file `deployment\migrate.ps1` per la variabile `SECRET_KEY` con il valore appena generato.
 7. Aggiorna il contenuto del file `deployment\migrate.ps1` per la variabile `DATABASE_PASSWORD` con il valore della password relativo all'utente "pratiche" su postgres
-
-4. Configura Application Pool "pratiche_pareri"
-5. Crea applicazione IIS "pratiche_pareri" sotto un sito (es: Default Site) che ascolta sulla porta 80
-6. Configura cartella log: `E:\prod\logs\pratiche_pareri` (puoi usare lo script 'setup_log.ps1')
-7. Raccogli file statici: `uv run manage.prod.py collectstatic`
+8. Esegui `deployment\migrate.ps1`
+9. Attiva il virtual environment: `.\venv\Scripts\activate`
+10. Esegui un caricamento dei dati iniziali `make loaddata_full-prod`
+11. Imposta la cartella dei log con i permessi: `deployment\config_log_files.ps1`
+12. Configura Application Pool "pratiche_pareri" : `deployment\config_log_files.ps1`
+13. Crea applicazione IIS "pratiche_pareri" sotto un sito (es: Default Site) che ascolta sulla porta 80
+14. Configura cartella log: `E:\prod\logs\pratiche_pareri` (puoi usare lo script 'setup_log.ps1')
+15. Raccogli file statici: `uv run manage.prod.py collectstatic`
 
 ## URL
 

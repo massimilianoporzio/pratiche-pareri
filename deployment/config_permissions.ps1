@@ -1,16 +1,16 @@
 # Permessi per la cartella del progetto
-$projectPath = "C:\inetpub\wwwroot\pratiche_pareri"
+$projectPath = "E:\prod\pratiche_pareri"
 $poolIdentity = "IIS AppPool\$poolName"
 
 Write-Host "🔧 Configurazione permessi..." -ForegroundColor Yellow
 
 # Permessi base di lettura ed esecuzione
 $acl = Get-Acl $projectPath
-$readAccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule($poolIdentity,"ReadAndExecute","ContainerInherit,ObjectInherit","None","Allow")
+$readAccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule($poolIdentity, "ReadAndExecute", "ContainerInherit,ObjectInherit", "None", "Allow")
 $acl.SetAccessRule($readAccessRule)
 
 # Permessi di scrittura per cartelle specifiche
-$writeAccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule($poolIdentity,"FullControl","ContainerInherit,ObjectInherit","None","Allow")
+$writeAccessRule = New-Object System.Security.AccessControl.FileSystemAccessRule($poolIdentity, "FullControl", "ContainerInherit,ObjectInherit", "None", "Allow")
 
 # Media folder (se esiste e necessita scrittura)
 $mediaPath = Join-Path $projectPath "media"
@@ -31,6 +31,7 @@ try {
     "Test finale $(Get-Date)" | Out-File $testFile
     Remove-Item $testFile
     Write-Host "✅ Permessi log funzionanti" -ForegroundColor Green
-} catch {
+}
+catch {
     Write-Host "❌ Problema permessi log: $($_.Exception.Message)" -ForegroundColor Red
 }

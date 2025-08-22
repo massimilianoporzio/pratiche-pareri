@@ -1,4 +1,5 @@
 Import-Module IISAdministration
+Import-Module WebAdministration
 
 # Crea Application Pool
 $poolName = "pratiche_pareri"
@@ -6,7 +7,8 @@ $appPool = Get-IISAppPool -Name $poolName -ErrorAction SilentlyContinue
 if (-not $appPool) {
     $appPool = New-IISAppPool -Name $poolName
     Write-Host "✅ Application Pool '$poolName' creato" -ForegroundColor Green
-} else {
+}
+else {
     Write-Host "✅ Application Pool '$poolName' già esistente" -ForegroundColor Yellow
 }
 
